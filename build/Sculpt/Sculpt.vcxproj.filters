@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;cxx;c;def</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h</Extensions>
+    </Filter>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>moc;h;cpp</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="Generated Files\Debug">
+      <UniqueIdentifier>{fb7a3a4d-60ec-4e41-942a-c2593640a5c3}</UniqueIdentifier>
+      <Extensions>cpp;moc</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="Generated Files\Release">
+      <UniqueIdentifier>{8e3609bd-1718-4145-ba53-0e201deac781}</UniqueIdentifier>
+      <Extensions>cpp;moc</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="Header Files\brush">
+      <UniqueIdentifier>{3f256804-fb95-4eab-9fd2-a1ff674f6b32}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\brush">
+      <UniqueIdentifier>{d0903bd2-d482-4239-b7db-1eaad15f974c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\inc\Sculpt\AnchoredStroke.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\Sculpt\AverageBrushDataOp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\Sculpt\BezierCurve.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\Sculpt\BMSplitCollapseOp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\Sculpt\commonDefine.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\Sculpt\NormalUpdateOp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\Sculpt\StrokeData.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\Sculpt\SUtil.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\Sculpt\brush\ClayBrushOp.h">
+      <Filter>Header Files\brush</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\Sculpt\brush\ClayStripBrushOp.h">
+      <Filter>Header Files\brush</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\Sculpt\brush\CreaseBrushOp.h">
+      <Filter>Header Files\brush</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\Sculpt\brush\DrawBrushOp.h">
+      <Filter>Header Files\brush</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\Sculpt\brush\FillBrushOp.h">
+      <Filter>Header Files\brush</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\Sculpt\brush\FlattenBrushOp.h">
+      <Filter>Header Files\brush</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\Sculpt\brush\GrabBrushOp.h">
+      <Filter>Header Files\brush</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\Sculpt\brush\InflateBrushOp.h">
+      <Filter>Header Files\brush</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\Sculpt\brush\NudgetBrushOp.h">
+      <Filter>Header Files\brush</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\Sculpt\brush\PinchBrushOp.h">
+      <Filter>Header Files\brush</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\Sculpt\brush\RotateBrushOp.h">
+      <Filter>Header Files\brush</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\Sculpt\brush\SculptStroke.h">
+      <Filter>Header Files\brush</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\Sculpt\brush\SmoothBrushOp.h">
+      <Filter>Header Files\brush</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\Sculpt\brush\SnakeHookBrushOp.h">
+      <Filter>Header Files\brush</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\Sculpt\brush\ThumbBrushOp.h">
+      <Filter>Header Files\brush</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\Sculpt\SculptCommand.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\Sculpt\VSculptLogger.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\Sculpt\VSculptConfig.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\Sculpt\BezierCurve.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Sculpt\BMSplitCollapseOp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Sculpt\SUtil.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Sculpt\brush\SculptStroke.cpp">
+      <Filter>Source Files\brush</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\inc\Sculpt\VSculptLogger.cpp">
+      <Filter>Header Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Sculpt\SculptCommand.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Sculpt\VSculptConfig.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

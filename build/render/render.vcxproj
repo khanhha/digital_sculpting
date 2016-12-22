@@ -1,0 +1,295 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\inc\render\Graphics\GL4\GteGL4BlendState.h" />
+    <ClInclude Include="..\..\inc\render\Graphics\GL4\GteGL4Buffer.h" />
+    <ClInclude Include="..\..\inc\render\Graphics\GL4\GteGL4ConstantBuffer.h" />
+    <ClInclude Include="..\..\inc\render\Graphics\GL4\GteGL4DepthStencilState.h" />
+    <ClInclude Include="..\..\inc\render\Graphics\GL4\GteGL4DrawingState.h" />
+    <ClInclude Include="..\..\inc\render\Graphics\GL4\GteGL4DrawTarget.h" />
+    <ClInclude Include="..\..\inc\render\Graphics\GL4\GteGL4Engine.h" />
+    <ClInclude Include="..\..\inc\render\Graphics\GL4\GteGL4GraphicsObject.h" />
+    <ClInclude Include="..\..\inc\render\Graphics\GL4\GteGL4IndexBuffer.h" />
+    <ClInclude Include="..\..\inc\render\Graphics\GL4\GteGL4InputLayout.h" />
+    <ClInclude Include="..\..\inc\render\Graphics\GL4\GteGL4InputLayoutManager.h" />
+    <ClInclude Include="..\..\inc\render\Graphics\GL4\GteGL4RasterizerState.h" />
+    <ClInclude Include="..\..\inc\render\Graphics\GL4\GteGL4Resource.h" />
+    <ClInclude Include="..\..\inc\render\Graphics\GL4\GteGL4SamplerState.h" />
+    <ClInclude Include="..\..\inc\render\Graphics\GL4\GteGL4Texture.h" />
+    <ClInclude Include="..\..\inc\render\Graphics\GL4\GteGL4Texture2.h" />
+    <ClInclude Include="..\..\inc\render\Graphics\GL4\GteGL4Texture3.h" />
+    <ClInclude Include="..\..\inc\render\Graphics\GL4\GteGL4TextureArray.h" />
+    <ClInclude Include="..\..\inc\render\Graphics\GL4\GteGL4TextureCube.h" />
+    <ClInclude Include="..\..\inc\render\Graphics\GL4\GteGL4TextureDS.h" />
+    <ClInclude Include="..\..\inc\render\Graphics\GL4\GteGL4TextureRT.h" />
+    <ClInclude Include="..\..\inc\render\Graphics\GL4\GteGL4TextureSingle.h" />
+    <ClInclude Include="..\..\inc\render\Graphics\GL4\GteGL4VertexBuffer.h" />
+    <ClInclude Include="..\..\inc\render\Graphics\GL4\GteGLFunction.h" />
+    <ClInclude Include="..\..\inc\render\Graphics\GL4\GteGLSLComputeProgram.h" />
+    <ClInclude Include="..\..\inc\render\Graphics\GL4\GteGLSLProgramFactory.h" />
+    <ClInclude Include="..\..\inc\render\Graphics\GL4\GteGLSLReflection.h" />
+    <ClInclude Include="..\..\inc\render\Graphics\GL4\GteGLSLVisualProgram.h" />
+    <ClInclude Include="..\..\inc\render\Graphics\GteAmbientLightEffect.h" />
+    <ClInclude Include="..\..\inc\render\Graphics\GteBlendState.h" />
+    <ClInclude Include="..\..\inc\render\Graphics\GteBuffer.h" />
+    <ClInclude Include="..\..\inc\render\Graphics\GteComputeProgram.h" />
+    <ClInclude Include="..\..\inc\render\Graphics\GteComputeShader.h" />
+    <ClInclude Include="..\..\inc\render\Graphics\GteConstantBuffer.h" />
+    <ClInclude Include="..\..\inc\render\Graphics\GteConstantColorEffect.h" />
+    <ClInclude Include="..\..\inc\render\Graphics\GteDataFormat.h" />
+    <ClInclude Include="..\..\inc\render\Graphics\GteDepthStencilState.h" />
+    <ClInclude Include="..\..\inc\render\Graphics\GteDirectionalLightEffect.h" />
+    <ClInclude Include="..\..\inc\render\Graphics\GteDirectionalLightTextureEffect.h" />
+    <ClInclude Include="..\..\inc\render\Graphics\GteDrawingState.h" />
+    <ClInclude Include="..\..\inc\render\Graphics\GteDrawTarget.h" />
+    <ClInclude Include="..\..\inc\render\Graphics\GteFont.h" />
+    <ClInclude Include="..\..\inc\render\Graphics\GteFontArialW400H18.h" />
+    <ClInclude Include="..\..\inc\render\Graphics\GteGEDrawTarget.h" />
+    <ClInclude Include="..\..\inc\render\Graphics\GteGEInputLayoutManager.h" />
+    <ClInclude Include="..\..\inc\render\Graphics\GteGEObject.h" />
+    <ClInclude Include="..\..\inc\render\Graphics\GteGeometryShader.h" />
+    <ClInclude Include="..\..\inc\render\Graphics\GteGraphicsEngine.h" />
+    <ClInclude Include="..\..\inc\render\Graphics\GteGraphicsObject.h" />
+    <ClInclude Include="..\..\inc\render\Graphics\GteIndexBuffer.h" />
+    <ClInclude Include="..\..\inc\render\Graphics\GteIndexFormat.h" />
+    <ClInclude Include="..\..\inc\render\Graphics\GteIndirectArgumentsBuffer.h" />
+    <ClInclude Include="..\..\inc\render\Graphics\GteLightCameraGeometry.h" />
+    <ClInclude Include="..\..\inc\render\Graphics\GteLighting.h" />
+    <ClInclude Include="..\..\inc\render\Graphics\GteLightingEffect.h" />
+    <ClInclude Include="..\..\inc\render\Graphics\GteMaterial.h" />
+    <ClInclude Include="..\..\inc\render\Graphics\GteMemberLayout.h" />
+    <ClInclude Include="..\..\inc\render\Graphics\GteMeshFactory.h" />
+    <ClInclude Include="..\..\inc\render\Graphics\GteOverlayEffect.h" />
+    <ClInclude Include="..\..\inc\render\Graphics\GtePixelShader.h" />
+    <ClInclude Include="..\..\inc\render\Graphics\GtePointLightEffect.h" />
+    <ClInclude Include="..\..\inc\render\Graphics\GtePointLightTextureEffect.h" />
+    <ClInclude Include="..\..\inc\render\Graphics\GteProgramDefines.h" />
+    <ClInclude Include="..\..\inc\render\Graphics\GteProgramFactory.h" />
+    <ClInclude Include="..\..\inc\render\Graphics\GteRasterizerState.h" />
+    <ClInclude Include="..\..\inc\render\Graphics\GteRawBuffer.h" />
+    <ClInclude Include="..\..\inc\render\Graphics\GteResource.h" />
+    <ClInclude Include="..\..\inc\render\Graphics\GteSamplerState.h" />
+    <ClInclude Include="..\..\inc\render\Graphics\GteShader.h" />
+    <ClInclude Include="..\..\inc\render\Graphics\GteSpotLightEffect.h" />
+    <ClInclude Include="..\..\inc\render\Graphics\GteStructuredBuffer.h" />
+    <ClInclude Include="..\..\inc\render\Graphics\GteTextEffect.h" />
+    <ClInclude Include="..\..\inc\render\Graphics\GteTexture.h" />
+    <ClInclude Include="..\..\inc\render\Graphics\GteTexture1.h" />
+    <ClInclude Include="..\..\inc\render\Graphics\GteTexture1Array.h" />
+    <ClInclude Include="..\..\inc\render\Graphics\GteTexture2.h" />
+    <ClInclude Include="..\..\inc\render\Graphics\GteTexture2Array.h" />
+    <ClInclude Include="..\..\inc\render\Graphics\GteTexture2Effect.h" />
+    <ClInclude Include="..\..\inc\render\Graphics\GteTexture2ColorEffect.h" />
+    <ClInclude Include="..\..\inc\render\Graphics\GteTexture3.h" />
+    <ClInclude Include="..\..\inc\render\Graphics\GteTexture3Effect.h" />
+    <ClInclude Include="..\..\inc\render\Graphics\GteTextureArray.h" />
+    <ClInclude Include="..\..\inc\render\Graphics\GteTextureBuffer.h" />
+    <ClInclude Include="..\..\inc\render\Graphics\GteTextureCube.h" />
+    <ClInclude Include="..\..\inc\render\Graphics\GteTextureCubeArray.h" />
+    <ClInclude Include="..\..\inc\render\Graphics\GteTextureDS.h" />
+    <ClInclude Include="..\..\inc\render\Graphics\GteTextureRT.h" />
+    <ClInclude Include="..\..\inc\render\Graphics\GteTextureSingle.h" />
+    <ClInclude Include="..\..\inc\render\Graphics\GteTypedBuffer.h" />
+    <ClInclude Include="..\..\inc\render\Graphics\GteVertexBuffer.h" />
+    <ClInclude Include="..\..\inc\render\Graphics\GteVertexColorEffect.h" />
+    <ClInclude Include="..\..\inc\render\Graphics\GteVertexFormat.h" />
+    <ClInclude Include="..\..\inc\render\Graphics\GteVertexShader.h" />
+    <ClInclude Include="..\..\inc\render\Graphics\GteVisualEffect.h" />
+    <ClInclude Include="..\..\inc\render\Graphics\GteVisualProgram.h" />
+    <ClInclude Include="..\..\inc\render\GTEngineDEF.h" />
+    <ClInclude Include="..\..\inc\render\GTGraphics.h" />
+    <ClInclude Include="..\..\inc\render\LowLevel\GteArray2.h" />
+    <ClInclude Include="..\..\inc\render\LowLevel\GteAtomicMinMax.h" />
+    <ClInclude Include="..\..\inc\render\LowLevel\GteComputeModel.h" />
+    <ClInclude Include="..\..\inc\render\LowLevel\GteMemory.h" />
+    <ClInclude Include="..\..\inc\render\LowLevel\GteMinHeap.h" />
+    <ClInclude Include="..\..\inc\render\LowLevel\GteRangeIteration.h" />
+    <ClInclude Include="..\..\inc\render\LowLevel\GteThreadSafeMap.h" />
+    <ClInclude Include="..\..\inc\render\LowLevel\GteThreadSafeQueue.h" />
+    <ClInclude Include="..\..\inc\render\LowLevel\GteTimer.h" />
+    <ClInclude Include="..\..\inc\render\LowLevel\GteWrapper.h" />
+    <ClInclude Include="..\..\inc\render\Mathematics\GteBitHacks.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\render\Graphics\GL4\GteGL4BlendState.cpp" />
+    <ClCompile Include="..\..\src\render\Graphics\GL4\GteGL4Buffer.cpp" />
+    <ClCompile Include="..\..\src\render\Graphics\GL4\GteGL4ConstantBuffer.cpp" />
+    <ClCompile Include="..\..\src\render\Graphics\GL4\GteGL4DepthStencilState.cpp" />
+    <ClCompile Include="..\..\src\render\Graphics\GL4\GteGL4DrawingState.cpp" />
+    <ClCompile Include="..\..\src\render\Graphics\GL4\GteGL4DrawTarget.cpp" />
+    <ClCompile Include="..\..\src\render\Graphics\GL4\GteGL4Engine.cpp" />
+    <ClCompile Include="..\..\src\render\Graphics\GL4\GteGL4GraphicsObject.cpp" />
+    <ClCompile Include="..\..\src\render\Graphics\GL4\GteGL4IndexBuffer.cpp" />
+    <ClCompile Include="..\..\src\render\Graphics\GL4\GteGL4InputLayout.cpp" />
+    <ClCompile Include="..\..\src\render\Graphics\GL4\GteGL4InputLayoutManager.cpp" />
+    <ClCompile Include="..\..\src\render\Graphics\GL4\GteGL4RasterizerState.cpp" />
+    <ClCompile Include="..\..\src\render\Graphics\GL4\GteGL4Resource.cpp" />
+    <ClCompile Include="..\..\src\render\Graphics\GL4\GteGL4SamplerState.cpp" />
+    <ClCompile Include="..\..\src\render\Graphics\GL4\GteGL4Texture.cpp" />
+    <ClCompile Include="..\..\src\render\Graphics\GL4\GteGL4Texture2.cpp" />
+    <ClCompile Include="..\..\src\render\Graphics\GL4\GteGL4Texture3.cpp" />
+    <ClCompile Include="..\..\src\render\Graphics\GL4\GteGL4TextureArray.cpp" />
+    <ClCompile Include="..\..\src\render\Graphics\GL4\GteGL4TextureCube.cpp" />
+    <ClCompile Include="..\..\src\render\Graphics\GL4\GteGL4TextureDS.cpp" />
+    <ClCompile Include="..\..\src\render\Graphics\GL4\GteGL4TextureRT.cpp" />
+    <ClCompile Include="..\..\src\render\Graphics\GL4\GteGL4TextureSingle.cpp" />
+    <ClCompile Include="..\..\src\render\Graphics\GL4\GteGL4VertexBuffer.cpp" />
+    <ClCompile Include="..\..\src\render\Graphics\GL4\GteGLFunction.cpp" />
+    <ClCompile Include="..\..\src\render\Graphics\GL4\GteGLSLComputeProgram.cpp" />
+    <ClCompile Include="..\..\src\render\Graphics\GL4\GteGLSLProgramFactory.cpp" />
+    <ClCompile Include="..\..\src\render\Graphics\GL4\GteGLSLReflection.cpp" />
+    <ClCompile Include="..\..\src\render\Graphics\GL4\GteGLSLVisualProgram.cpp" />
+    <ClCompile Include="..\..\src\render\Graphics\GteAmbientLightEffect.cpp" />
+    <ClCompile Include="..\..\src\render\Graphics\GteBlendState.cpp" />
+    <ClCompile Include="..\..\src\render\Graphics\GteBuffer.cpp" />
+    <ClCompile Include="..\..\src\render\Graphics\GteComputeProgram.cpp" />
+    <ClCompile Include="..\..\src\render\Graphics\GteComputeShader.cpp" />
+    <ClCompile Include="..\..\src\render\Graphics\GteConstantBuffer.cpp" />
+    <ClCompile Include="..\..\src\render\Graphics\GteConstantColorEffect.cpp" />
+    <ClCompile Include="..\..\src\render\Graphics\GteDataFormat.cpp" />
+    <ClCompile Include="..\..\src\render\Graphics\GteDepthStencilState.cpp" />
+    <ClCompile Include="..\..\src\render\Graphics\GteDirectionalLightEffect.cpp" />
+    <ClCompile Include="..\..\src\render\Graphics\GteDirectionalLightTextureEffect.cpp" />
+    <ClCompile Include="..\..\src\render\Graphics\GteDrawingState.cpp" />
+    <ClCompile Include="..\..\src\render\Graphics\GteDrawTarget.cpp" />
+    <ClCompile Include="..\..\src\render\Graphics\GteFont.cpp" />
+    <ClCompile Include="..\..\src\render\Graphics\GteFontArialW400H18.cpp" />
+    <ClCompile Include="..\..\src\render\Graphics\GteGEDrawTarget.cpp" />
+    <ClCompile Include="..\..\src\render\Graphics\GteGEObject.cpp" />
+    <ClCompile Include="..\..\src\render\Graphics\GteGeometryShader.cpp" />
+    <ClCompile Include="..\..\src\render\Graphics\GteGraphicsEngine.cpp" />
+    <ClCompile Include="..\..\src\render\Graphics\GteGraphicsObject.cpp" />
+    <ClCompile Include="..\..\src\render\Graphics\GteIndexBuffer.cpp" />
+    <ClCompile Include="..\..\src\render\Graphics\GteIndirectArgumentsBuffer.cpp" />
+    <ClCompile Include="..\..\src\render\Graphics\GteLightCameraGeometry.cpp" />
+    <ClCompile Include="..\..\src\render\Graphics\GteLighting.cpp" />
+    <ClCompile Include="..\..\src\render\Graphics\GteLightingEffect.cpp" />
+    <ClCompile Include="..\..\src\render\Graphics\GteMaterial.cpp" />
+    <ClCompile Include="..\..\src\render\Graphics\GteMeshFactory.cpp" />
+    <ClCompile Include="..\..\src\render\Graphics\GteOverlayEffect.cpp" />
+    <ClCompile Include="..\..\src\render\Graphics\GtePixelShader.cpp" />
+    <ClCompile Include="..\..\src\render\Graphics\GtePointLightEffect.cpp" />
+    <ClCompile Include="..\..\src\render\Graphics\GtePointLightTextureEffect.cpp" />
+    <ClCompile Include="..\..\src\render\Graphics\GteProgramDefines.cpp" />
+    <ClCompile Include="..\..\src\render\Graphics\GteProgramFactory.cpp" />
+    <ClCompile Include="..\..\src\render\Graphics\GteRasterizerState.cpp" />
+    <ClCompile Include="..\..\src\render\Graphics\GteRawBuffer.cpp" />
+    <ClCompile Include="..\..\src\render\Graphics\GteResource.cpp" />
+    <ClCompile Include="..\..\src\render\Graphics\GteSamplerState.cpp" />
+    <ClCompile Include="..\..\src\render\Graphics\GteShader.cpp" />
+    <ClCompile Include="..\..\src\render\Graphics\GteSpotLightEffect.cpp" />
+    <ClCompile Include="..\..\src\render\Graphics\GteStructuredBuffer.cpp" />
+    <ClCompile Include="..\..\src\render\Graphics\GteTextEffect.cpp" />
+    <ClCompile Include="..\..\src\render\Graphics\GteTexture.cpp" />
+    <ClCompile Include="..\..\src\render\Graphics\GteTexture1.cpp" />
+    <ClCompile Include="..\..\src\render\Graphics\GteTexture1Array.cpp" />
+    <ClCompile Include="..\..\src\render\Graphics\GteTexture2.cpp" />
+    <ClCompile Include="..\..\src\render\Graphics\GteTexture2Array.cpp" />
+    <ClCompile Include="..\..\src\render\Graphics\GteTexture2Effect.cpp" />
+    <ClCompile Include="..\..\src\render\Graphics\GteTexture2ColorEffect.cpp" />
+    <ClCompile Include="..\..\src\render\Graphics\GteTexture3.cpp" />
+    <ClCompile Include="..\..\src\render\Graphics\GteTexture3Effect.cpp" />
+    <ClCompile Include="..\..\src\render\Graphics\GteTextureArray.cpp" />
+    <ClCompile Include="..\..\src\render\Graphics\GteTextureBuffer.cpp" />
+    <ClCompile Include="..\..\src\render\Graphics\GteTextureCube.cpp" />
+    <ClCompile Include="..\..\src\render\Graphics\GteTextureCubeArray.cpp" />
+    <ClCompile Include="..\..\src\render\Graphics\GteTextureDS.cpp" />
+    <ClCompile Include="..\..\src\render\Graphics\GteTextureRT.cpp" />
+    <ClCompile Include="..\..\src\render\Graphics\GteTextureSingle.cpp" />
+    <ClCompile Include="..\..\src\render\Graphics\GteTypedBuffer.cpp" />
+    <ClCompile Include="..\..\src\render\Graphics\GteVertexBuffer.cpp" />
+    <ClCompile Include="..\..\src\render\Graphics\GteVertexColorEffect.cpp" />
+    <ClCompile Include="..\..\src\render\Graphics\GteVertexFormat.cpp" />
+    <ClCompile Include="..\..\src\render\Graphics\GteVertexShader.cpp" />
+    <ClCompile Include="..\..\src\render\Graphics\GteVisualEffect.cpp" />
+    <ClCompile Include="..\..\src\render\Graphics\GteVisualProgram.cpp" />
+    <ClCompile Include="..\..\src\render\LowLevel\GteTimer.cpp" />
+    <ClCompile Include="..\..\src\render\LowLevel\GteWrapper.cpp" />
+    <ClCompile Include="..\..\src\render\Mathematics\GteBitHacks.cpp" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{230C1F51-5DAF-48EF-BB25-1D05D027C5BF}</ProjectGuid>
+    <Keyword>Qt4VSv1.0</Keyword>
+    <ProjectName>Render</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>12.0.30501.0</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>..\..\lib\</OutDir>
+    <TargetName>$(ProjectName)d</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>..\..\lib\</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>UNICODE;WIN32;WIN64;QT_DLL;QT_CORE_LIB;QT_GUI_LIB;QT_OPENGL_LIB;QT_WIDGETS_LIB;GTE_DEV_OPENGL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\GeneratedFiles;.;$(QTDIR_56)\include;.\GeneratedFiles\$(ConfigurationName);$(QTDIR_56)\include\QtCore;$(QTDIR_56)\include\QtGui;$(QTDIR_56)\include\QtOpenGL;$(QTDIR_56)\include\QtWidgets;..\..\inc\render;..\..\vendor\tbb\include;..\..\inc\render\Graphics\GL4;..\..\vendor\boost;..\..\vendor\eigen;..\..\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Optimization>Disabled</Optimization>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>$(OutDir)\$(ProjectName).exe</OutputFile>
+      <AdditionalLibraryDirectories>$(QTDIR)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>qtmaind.lib;Qt5Cored.lib;Qt5Guid.lib;Qt5OpenGLd.lib;opengl32.lib;glu32.lib;Qt5Widgetsd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>UNICODE;WIN32;WIN64;QT_DLL;QT_CORE_LIB;QT_GUI_LIB;QT_OPENGL_LIB;QT_WIDGETS_LIB;GTE_DEV_OPENGL;BOOST_DISABLE_THREADS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\GeneratedFiles;.;$(QTDIR_56)\include;.\GeneratedFiles\$(ConfigurationName);$(QTDIR_56)\include\QtCore;$(QTDIR_56)\include\QtGui;$(QTDIR_56)\include\QtOpenGL;$(QTDIR_56)\include\QtWidgets;..\..\inc\render;..\..\vendor\tbb\include;..\..\inc\render\Graphics\GL4;..\..\vendor\boost;..\..\vendor\eigen;..\..\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DebugInformationFormat />
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>$(OutDir)\$(ProjectName).exe</OutputFile>
+      <AdditionalLibraryDirectories>$(QTDIR)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <AdditionalDependencies>qtmain.lib;Qt5Core.lib;Qt5Gui.lib;Qt5OpenGL.lib;opengl32.lib;glu32.lib;Qt5Widgets.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties MocDir=".\GeneratedFiles\$(ConfigurationName)" UicDir=".\GeneratedFiles" RccDir=".\GeneratedFiles" lupdateOptions="" lupdateOnBuild="0" lreleaseOptions="" Qt5Version_x0020_Win32="QTDIR_56" MocOptions="" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

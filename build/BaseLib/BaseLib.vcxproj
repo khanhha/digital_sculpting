@@ -1,0 +1,188 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{43BA1B24-5A6A-41E4-ACB3-C72764394367}</ProjectGuid>
+    <RootNamespace>BaseLib</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>..\..\lib\</OutDir>
+    <TargetName>$(ProjectName)d</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>..\..\lib\</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>..\..\inc;..\..\inc\BaseLib;..\..\inc\BaseLib\misc;..\..\inc\Diagnotics;..\..\vendor\eigen;$(QTDIR_56)\include;$(QTDIR_56)\include\QtCore;$(QTDIR_56)\include\QtGui;..\..\vendor\tbb\include</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NOMINMAX ;WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>
+      </FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>..\..\inc;..\..\inc\BaseLib;..\..\inc\BaseLib\misc;..\..\inc\Diagnotics;..\..\vendor\eigen;$(QTDIR_56)\include;$(QTDIR_56)\include\QtCore;$(QTDIR_56)\include\QtGui;..\..\vendor\tbb\include</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NOMINMAX;WIN32;_LIB;BOOST_DISABLE_THREADS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\inc\BaseLib\aabb2d.h" />
+    <ClInclude Include="..\..\inc\BaseLib\BasePrecompiled.h" />
+    <ClInclude Include="..\..\inc\BaseLib\Box.h" />
+    <ClInclude Include="..\..\inc\BaseLib\BoxEdge.h" />
+    <ClInclude Include="..\..\inc\BaseLib\BoxPlane.h" />
+    <ClInclude Include="..\..\inc\BaseLib\BoxVertex.h" />
+    <ClInclude Include="..\..\inc\BaseLib\CalcPolygonOffset.h" />
+    <ClInclude Include="..\..\inc\BaseLib\ClipPolygon.h" />
+    <ClInclude Include="..\..\inc\BaseLib\contour2d.h" />
+    <ClInclude Include="..\..\inc\BaseLib\defined.h" />
+    <ClInclude Include="..\..\inc\BaseLib\DlnEdge.h" />
+    <ClInclude Include="..\..\inc\BaseLib\DlnPoint.h" />
+    <ClInclude Include="..\..\inc\BaseLib\DlnTriangle.h" />
+    <ClInclude Include="..\..\inc\BaseLib\eigen3.h" />
+    <ClInclude Include="..\..\inc\BaseLib\geometry.h" />
+    <ClInclude Include="..\..\inc\BaseLib\GluTesselator.h" />
+    <ClInclude Include="..\..\inc\BaseLib\GluTesselatorBoundary.h" />
+    <ClInclude Include="..\..\inc\BaseLib\intersectpoint.h" />
+    <ClInclude Include="..\..\inc\BaseLib\KArray.h" />
+    <ClInclude Include="..\..\inc\BaseLib\KGrid1D.h" />
+    <ClInclude Include="..\..\inc\BaseLib\KLinkList.h" />
+    <ClInclude Include="..\..\inc\BaseLib\KModelMatrix.h" />
+    <ClInclude Include="..\..\inc\BaseLib\KPair.h" />
+    <ClInclude Include="..\..\inc\BaseLib\KSphereOctree.h" />
+    <ClInclude Include="..\..\inc\BaseLib\K_HashTable.h" />
+    <ClInclude Include="..\..\inc\BaseLib\line2Dd.h" />
+    <ClInclude Include="..\..\inc\BaseLib\line3D.h" />
+    <ClInclude Include="..\..\inc\BaseLib\LinearEquation.h" />
+    <ClInclude Include="..\..\inc\BaseLib\MathBase.h" />
+    <ClInclude Include="..\..\inc\BaseLib\MathGeom.h" />
+    <ClInclude Include="..\..\inc\BaseLib\MathUtil.h" />
+    <ClInclude Include="..\..\inc\BaseLib\matrix3x3d.h" />
+    <ClInclude Include="..\..\inc\BaseLib\matrix4x4d.h" />
+    <ClInclude Include="..\..\inc\BaseLib\PlanarContour.h" />
+    <ClInclude Include="..\..\inc\BaseLib\Plane.h" />
+    <ClInclude Include="..\..\inc\BaseLib\point2D.h" />
+    <ClInclude Include="..\..\inc\BaseLib\Point2Df.h" />
+    <ClInclude Include="..\..\inc\BaseLib\Point3Dd.h" />
+    <ClInclude Include="..\..\inc\BaseLib\Point3DdList.h" />
+    <ClInclude Include="..\..\inc\BaseLib\PointnD.h" />
+    <ClInclude Include="..\..\inc\BaseLib\Quadrangle.h" />
+    <ClInclude Include="..\..\inc\BaseLib\Ray2Dd.h" />
+    <ClInclude Include="..\..\inc\BaseLib\segment2Dd.h" />
+    <ClInclude Include="..\..\inc\BaseLib\Segment2Df.h" />
+    <ClInclude Include="..\..\inc\BaseLib\segment3Dd.h" />
+    <ClInclude Include="..\..\inc\BaseLib\SkeletonGenerator.h" />
+    <ClInclude Include="..\..\inc\BaseLib\SseVector3f.h" />
+    <ClInclude Include="..\..\inc\BaseLib\StackWalker.h" />
+    <ClInclude Include="..\..\inc\BaseLib\Timer.h" />
+    <ClInclude Include="..\..\inc\BaseLib\triangle3Dd.h" />
+    <ClInclude Include="..\..\inc\BaseLib\TriangleIndexByZ.h" />
+    <ClInclude Include="..\..\inc\BaseLib\TriTriIsct.h" />
+    <ClInclude Include="..\..\inc\BaseLib\util.h" />
+    <ClInclude Include="..\..\inc\BaseLib\UtilMacro.h" />
+    <ClInclude Include="..\..\inc\BaseLib\VB2DTessellator.h" />
+    <ClInclude Include="..\..\inc\BaseLib\VBGrid2D.h" />
+    <ClInclude Include="..\..\inc\BaseLib\VBOffsetor.h" />
+    <ClInclude Include="..\..\inc\BaseLib\VBQuaternion.h" />
+    <ClInclude Include="..\..\inc\BaseLib\VertexGrid2D.h" />
+    <ClInclude Include="..\..\inc\BaseLib\VQuadric.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\inc\BaseLib\geometry.inl" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\BaseLib\BasePrecompiled.cpp" />
+    <ClCompile Include="..\..\src\BaseLib\Box.cpp" />
+    <ClCompile Include="..\..\src\BaseLib\BoxEdge.cpp" />
+    <ClCompile Include="..\..\src\BaseLib\BoxPlane.cpp" />
+    <ClCompile Include="..\..\src\BaseLib\BoxVertex.cpp" />
+    <ClCompile Include="..\..\src\BaseLib\CalcPolygonOffset.cpp" />
+    <ClCompile Include="..\..\src\BaseLib\ClipPolygon.cpp" />
+    <ClCompile Include="..\..\src\BaseLib\contour2d.cpp" />
+    <ClCompile Include="..\..\src\BaseLib\DlnEdge.cpp" />
+    <ClCompile Include="..\..\src\BaseLib\DlnPoint.cpp" />
+    <ClCompile Include="..\..\src\BaseLib\DlnTriangle.cpp" />
+    <ClCompile Include="..\..\src\BaseLib\eigen3.cpp" />
+    <ClCompile Include="..\..\src\BaseLib\GluTesselator.cpp" />
+    <ClCompile Include="..\..\src\BaseLib\GluTesselatorBoundary.cpp" />
+    <ClCompile Include="..\..\src\BaseLib\intersectpoint.cpp" />
+    <ClCompile Include="..\..\src\BaseLib\KModelMatrix.cpp" />
+    <ClCompile Include="..\..\src\BaseLib\line2Dd.cpp" />
+    <ClCompile Include="..\..\src\BaseLib\line3D.cpp" />
+    <ClCompile Include="..\..\src\BaseLib\MathGeom.cpp" />
+    <ClCompile Include="..\..\src\BaseLib\MathUtil.cpp" />
+    <ClCompile Include="..\..\src\BaseLib\matrix3x3d.cpp" />
+    <ClCompile Include="..\..\src\BaseLib\matrix4x4d.cpp" />
+    <ClCompile Include="..\..\src\BaseLib\PlanarContour.cpp" />
+    <ClCompile Include="..\..\src\BaseLib\Plane.cpp" />
+    <ClCompile Include="..\..\src\BaseLib\Point2Df.cpp" />
+    <ClCompile Include="..\..\src\BaseLib\Point3Dd.cpp" />
+    <ClCompile Include="..\..\src\BaseLib\Quadrangle.cpp" />
+    <ClCompile Include="..\..\src\BaseLib\Ray2Dd.cpp" />
+    <ClCompile Include="..\..\src\BaseLib\Segment2Dd.cpp" />
+    <ClCompile Include="..\..\src\BaseLib\Segment2Df.cpp" />
+    <ClCompile Include="..\..\src\BaseLib\segment3Dd.cpp" />
+    <ClCompile Include="..\..\src\BaseLib\SkeletonGenerator.cpp" />
+    <ClCompile Include="..\..\src\BaseLib\StackWalker.cpp" />
+    <ClCompile Include="..\..\src\BaseLib\Timer.cpp" />
+    <ClCompile Include="..\..\src\BaseLib\triangle3Dd.cpp" />
+    <ClCompile Include="..\..\src\BaseLib\TriTriIsct.cpp" />
+    <ClCompile Include="..\..\src\BaseLib\util.cpp" />
+    <ClCompile Include="..\..\src\BaseLib\VB2DTessellator.cpp" />
+    <ClCompile Include="..\..\src\BaseLib\VBOffsetor.cpp" />
+    <ClCompile Include="..\..\src\BaseLib\VBQuaternion.cpp" />
+    <ClCompile Include="..\..\src\BaseLib\VQuadric.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

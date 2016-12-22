@@ -1,0 +1,219 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\inc\VKernel\BMeshRemeshOp.h" />
+    <CustomBuild Include="..\..\inc\VKernel\VManipulatorNode.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Command>
+    </CustomBuild>
+    <ClInclude Include="..\..\inc\VKernel\GteWireframeEffect.h" />
+    <ClInclude Include="..\..\inc\VKernel\VMeshObjectRender.h" />
+    <CustomBuild Include="..\..\inc\VKernel\VNode.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing VNode.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DNOMINMAX -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DBOOST_DISABLE_THREADS -DDEBUG_DRAW "-I.\GeneratedFiles" "-I." "-I$(QTDIR_56)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR_56)\include\QtCore" "-I$(QTDIR_56)\include\QtGui" "-I$(QTDIR_56)\include\QtWidgets" "-I$(QTDIR_56)\include\QtOpenGL" "-I$(QTDIR_56)\include\QtQuick" "-I.\..\..\inc\BMesh" "-I.\..\..\inc\render\Graphics\GL4" "-I.\..\..\inc\render" "-I.\..\..\vendor\eigen" "-I.\..\..\vendor\boost" "-I.\..\..\vendor\tbb\include" "-I.\..\..\vendor\vcg\vcglib" "-I.\..\..\inc\VKernel" "-I.\..\..\inc"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing VNode.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DNOMINMAX -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DBOOST_DISABLE_THREADS "-I.\GeneratedFiles" "-I." "-I$(QTDIR_56)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR_56)\include\QtCore" "-I$(QTDIR_56)\include\QtGui" "-I$(QTDIR_56)\include\QtWidgets" "-I$(QTDIR_56)\include\QtOpenGL" "-I$(QTDIR_56)\include\QtQuick" "-I.\..\..\inc\BMesh" "-I.\..\..\inc\render\Graphics\GL4" "-I.\..\..\inc\render" "-I.\..\..\vendor\eigen" "-I.\..\..\vendor\boost" "-I.\..\..\vendor\tbb\include" "-I.\..\..\vendor\vcg\vcglib" "-I.\..\..\inc\VKernel" "-I.\..\..\inc"</Command>
+    </CustomBuild>
+    <ClInclude Include="..\..\inc\VKernel\VNodeRender.h" />
+    <CustomBuild Include="..\..\inc\VKernel\VScene.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing VScene.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DNOMINMAX -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DBOOST_DISABLE_THREADS -DDEBUG_DRAW "-I.\GeneratedFiles" "-I." "-I$(QTDIR_56)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR_56)\include\QtCore" "-I$(QTDIR_56)\include\QtGui" "-I$(QTDIR_56)\include\QtWidgets" "-I$(QTDIR_56)\include\QtOpenGL" "-I$(QTDIR_56)\include\QtQuick" "-I.\..\..\inc\BMesh" "-I.\..\..\inc\render\Graphics\GL4" "-I.\..\..\inc\render" "-I.\..\..\vendor\eigen" "-I.\..\..\vendor\boost" "-I.\..\..\vendor\tbb\include" "-I.\..\..\vendor\vcg\vcglib" "-I.\..\..\inc\VKernel" "-I.\..\..\inc"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing VScene.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DNOMINMAX -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DBOOST_DISABLE_THREADS "-I.\GeneratedFiles" "-I." "-I$(QTDIR_56)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR_56)\include\QtCore" "-I$(QTDIR_56)\include\QtGui" "-I$(QTDIR_56)\include\QtWidgets" "-I$(QTDIR_56)\include\QtOpenGL" "-I$(QTDIR_56)\include\QtQuick" "-I.\..\..\inc\BMesh" "-I.\..\..\inc\render\Graphics\GL4" "-I.\..\..\inc\render" "-I.\..\..\vendor\eigen" "-I.\..\..\vendor\boost" "-I.\..\..\vendor\tbb\include" "-I.\..\..\vendor\vcg\vcglib" "-I.\..\..\inc\VKernel" "-I.\..\..\inc"</Command>
+    </CustomBuild>
+    <ClInclude Include="..\..\inc\VKernel\VSceneRenderer.h" />
+    <ClInclude Include="..\..\inc\VKernel\VSmoothOp.h" />
+    <ClInclude Include="..\..\inc\VKernel\VTextureLoader.h" />
+    <ClInclude Include="..\..\inc\VKernel\VView3DEditBox.h" />
+    <ClInclude Include="..\..\inc\VKernel\VFloorNode.h" />
+    <ClInclude Include="..\..\inc\VKernel\VMeshObject.h" />
+    <CustomBuild Include="..\..\inc\VKernel\VCamera.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing VCamera.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DNOMINMAX -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DBOOST_DISABLE_THREADS -DDEBUG_DRAW  "-I.\GeneratedFiles" "-I." "-I$(QTDIR_56)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR_56)\include\QtCore" "-I$(QTDIR_56)\include\QtGui" "-I$(QTDIR_56)\include\QtWidgets" "-I$(QTDIR_56)\include\QtOpenGL" "-I$(QTDIR_56)\include\QtQuick" "-I.\..\..\inc\BMesh" "-I.\..\..\inc\render\Graphics\GL4" "-I.\..\..\inc\render" "-I.\..\..\vendor\eigen" "-I.\..\..\vendor\boost" "-I.\..\..\vendor\tbb\include" "-I.\..\..\vendor\vcg\vcglib" "-I.\..\..\inc\VKernel" "-I.\..\..\inc"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing VCamera.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DNOMINMAX -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DBOOST_DISABLE_THREADS  "-I.\GeneratedFiles" "-I." "-I$(QTDIR_56)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR_56)\include\QtCore" "-I$(QTDIR_56)\include\QtGui" "-I$(QTDIR_56)\include\QtWidgets" "-I$(QTDIR_56)\include\QtOpenGL" "-I$(QTDIR_56)\include\QtQuick" "-I.\..\..\inc\BMesh" "-I.\..\..\inc\render\Graphics\GL4" "-I.\..\..\inc\render" "-I.\..\..\vendor\eigen" "-I.\..\..\vendor\boost" "-I.\..\..\vendor\tbb\include" "-I.\..\..\vendor\vcg\vcglib" "-I.\..\..\inc\VKernel" "-I.\..\..\inc"</Command>
+    </CustomBuild>
+    <ClInclude Include="..\..\inc\VKernel\VCameraLens.h" />
+    <CustomBuild Include="..\..\inc\VKernel\VLighting.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing VLighting.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DNOMINMAX -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DBOOST_DISABLE_THREADS -DDEBUG_DRAW  "-I.\GeneratedFiles" "-I." "-I$(QTDIR_56)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR_56)\include\QtCore" "-I$(QTDIR_56)\include\QtGui" "-I$(QTDIR_56)\include\QtWidgets" "-I$(QTDIR_56)\include\QtOpenGL" "-I$(QTDIR_56)\include\QtQuick" "-I.\..\..\inc\BMesh" "-I.\..\..\inc\render\Graphics\GL4" "-I.\..\..\inc\render" "-I.\..\..\vendor\eigen" "-I.\..\..\vendor\boost" "-I.\..\..\vendor\tbb\include" "-I.\..\..\vendor\vcg\vcglib" "-I.\..\..\inc\VKernel" "-I.\..\..\inc"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing VLighting.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DNOMINMAX -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DBOOST_DISABLE_THREADS  "-I.\GeneratedFiles" "-I." "-I$(QTDIR_56)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR_56)\include\QtCore" "-I$(QTDIR_56)\include\QtGui" "-I$(QTDIR_56)\include\QtWidgets" "-I$(QTDIR_56)\include\QtOpenGL" "-I$(QTDIR_56)\include\QtQuick" "-I.\..\..\inc\BMesh" "-I.\..\..\inc\render\Graphics\GL4" "-I.\..\..\inc\render" "-I.\..\..\vendor\eigen" "-I.\..\..\vendor\boost" "-I.\..\..\vendor\tbb\include" "-I.\..\..\vendor\vcg\vcglib" "-I.\..\..\inc\VKernel" "-I.\..\..\inc"</Command>
+    </CustomBuild>
+    <ClInclude Include="..\..\inc\VKernel\VContext.h" />
+    <ClInclude Include="..\..\inc\VKernel\VKernelCommon.h" />
+    <ClInclude Include="..\..\inc\VKernel\VObject.h" />
+    <ClInclude Include="..\..\inc\VKernel\VPVWUpdater.h" />
+    <CustomBuild Include="..\..\inc\VKernel\VView3DRegion.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing VView3DRegion.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DNOMINMAX -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DBOOST_DISABLE_THREADS -DDEBUG_DRAW  "-I.\GeneratedFiles" "-I." "-I$(QTDIR_56)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR_56)\include\QtCore" "-I$(QTDIR_56)\include\QtGui" "-I$(QTDIR_56)\include\QtWidgets" "-I$(QTDIR_56)\include\QtOpenGL" "-I$(QTDIR_56)\include\QtQuick" "-I.\..\..\inc\BMesh" "-I.\..\..\inc\render\Graphics\GL4" "-I.\..\..\inc\render" "-I.\..\..\vendor\eigen" "-I.\..\..\vendor\boost" "-I.\..\..\vendor\tbb\include" "-I.\..\..\vendor\vcg\vcglib" "-I.\..\..\inc\VKernel" "-I.\..\..\inc"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing VView3DRegion.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DNOMINMAX -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DBOOST_DISABLE_THREADS  "-I.\GeneratedFiles" "-I." "-I$(QTDIR_56)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR_56)\include\QtCore" "-I$(QTDIR_56)\include\QtGui" "-I$(QTDIR_56)\include\QtWidgets" "-I$(QTDIR_56)\include\QtOpenGL" "-I$(QTDIR_56)\include\QtQuick" "-I.\..\..\inc\BMesh" "-I.\..\..\inc\render\Graphics\GL4" "-I.\..\..\inc\render" "-I.\..\..\vendor\eigen" "-I.\..\..\vendor\boost" "-I.\..\..\vendor\tbb\include" "-I.\..\..\vendor\vcg\vcglib" "-I.\..\..\inc\VKernel" "-I.\..\..\inc"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\VKernel\BMeshRemeshOp.cpp" />
+    <ClCompile Include="..\..\src\VKernel\GteWireframeEffect.cpp" />
+    <ClCompile Include="..\..\src\VKernel\VManipulatorNode.cpp" />
+    <ClCompile Include="..\..\src\VKernel\VMeshObjectRender.cpp" />
+    <ClCompile Include="..\..\src\VKernel\VObject.cpp" />
+    <ClCompile Include="..\..\src\VKernel\VSceneRenderer.cpp" />
+    <ClCompile Include="..\..\src\VKernel\VSmoothOp.cpp" />
+    <ClCompile Include="..\..\src\VKernel\VTextureLoader.cpp" />
+    <ClCompile Include="..\..\src\VKernel\VView3DEditBox.cpp" />
+    <ClCompile Include="..\..\src\VKernel\VFloorNode.cpp" />
+    <ClCompile Include="..\..\src\VKernel\VMeshObject.cpp" />
+    <ClCompile Include="..\..\src\VKernel\VCamera.cpp" />
+    <ClCompile Include="..\..\src\VKernel\VCameraLens.cpp" />
+    <ClCompile Include="..\..\src\VKernel\VContext.cpp" />
+    <ClCompile Include="..\..\src\VKernel\VLighting.cpp" />
+    <ClCompile Include="..\..\src\VKernel\VNode.cpp" />
+    <ClCompile Include="..\..\src\VKernel\VPVWUpdater.cpp" />
+    <ClCompile Include="..\..\src\VKernel\VView3DRegion.cpp" />
+    <ClCompile Include="..\..\src\VKernel\VScene.cpp" />
+    <ClCompile Include="GeneratedFiles\Debug\moc_VCamera.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_VLighting.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_VNode.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_VScene.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_VView3DRegion.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_VCamera.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_VLighting.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_VNode.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_VScene.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_VView3DRegion.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{FC2ADA12-8D06-4F55-8980-07FFA024285A}</ProjectGuid>
+    <Keyword>Qt4VSv1.0</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>12.0.30501.0</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>..\..\lib\</OutDir>
+    <TargetName>$(ProjectName)d</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>..\..\lib\</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>NOMINMAX;UNICODE;WIN32;WIN64;QT_DLL;QT_CORE_LIB;QT_GUI_LIB;QT_WIDGETS_LIB;BOOST_DISABLE_THREADS;DEBUG_DRAW;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\GeneratedFiles;.;$(QTDIR_56)\include;.\GeneratedFiles\$(ConfigurationName);$(QTDIR_56)\include\QtCore;$(QTDIR_56)\include\QtGui;$(QTDIR_56)\include\QtWidgets;$(QTDIR_56)\include\QtOpenGL;$(QTDIR_56)\include\QtQuick;..\..\inc\BMesh;..\..\inc\render\Graphics\GL4;..\..\inc\render;..\..\vendor\eigen;..\..\vendor\boost;..\..\vendor\tbb\include;..\..\vendor\vcg\vcglib;..\..\inc\VKernel;..\..\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Optimization>Disabled</Optimization>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>$(OutDir)\$(ProjectName).exe</OutputFile>
+      <AdditionalLibraryDirectories>$(QTDIR)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>qtmaind.lib;Qt5Cored.lib;Qt5Guid.lib;Qt5Widgetsd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>NOMINMAX;UNICODE;WIN32;WIN64;QT_DLL;QT_CORE_LIB;QT_GUI_LIB;QT_WIDGETS_LIB;BOOST_DISABLE_THREADS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\GeneratedFiles;.;$(QTDIR_56)\include;.\GeneratedFiles\$(ConfigurationName);$(QTDIR_56)\include\QtCore;$(QTDIR_56)\include\QtGui;$(QTDIR_56)\include\QtWidgets;$(QTDIR_56)\include\QtOpenGL;$(QTDIR_56)\include\QtQuick;..\..\inc\BMesh;..\..\inc\render\Graphics\GL4;..\..\inc\render;..\..\vendor\eigen;..\..\vendor\boost;..\..\vendor\tbb\include;..\..\vendor\vcg\vcglib;..\..\inc\VKernel;..\..\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DebugInformationFormat />
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>$(OutDir)\$(ProjectName).exe</OutputFile>
+      <AdditionalLibraryDirectories>$(QTDIR)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <AdditionalDependencies>qtmain.lib;Qt5Core.lib;Qt5Gui.lib;Qt5Widgets.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties MocDir=".\GeneratedFiles\$(ConfigurationName)" UicDir=".\GeneratedFiles" RccDir=".\GeneratedFiles" lupdateOptions="" lupdateOnBuild="0" lreleaseOptions="" Qt5Version_x0020_Win32="QTDIR_56" MocOptions="" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

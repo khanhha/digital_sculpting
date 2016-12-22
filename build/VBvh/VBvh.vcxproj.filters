@@ -1,0 +1,180 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\common">
+      <UniqueIdentifier>{b3b15c03-cbfc-4612-8767-6d901ef1a01f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\hash">
+      <UniqueIdentifier>{49e6edc6-596b-4ec1-b30b-7e2505d52548}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\common\math">
+      <UniqueIdentifier>{b4618ca6-c71c-411a-a959-4cdd39933591}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\common\simd">
+      <UniqueIdentifier>{f7b70875-f2df-4c80-941d-e4f140de3391}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\common\sys">
+      <UniqueIdentifier>{331e247d-970d-40ad-81b7-bd604f14600e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\common">
+      <UniqueIdentifier>{c3952df9-6173-4693-bc21-e810d43801e6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\common\simd">
+      <UniqueIdentifier>{0fc5fe67-a86c-45db-9895-2d3a7b9f50a3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\common\sys">
+      <UniqueIdentifier>{9fdffa4c-2ae8-4b12-84a3-de51abe7be4f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\inc\VBvh\BMBvhIsect.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\VBvh\BMeshBvh.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\VBvh\BMeshBvhBuilder.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\VBvh\BMeshBvhNodeSplitter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\VBvh\VBvhBinBuilder.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\VBvh\VBvhDefine.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\VBvh\VBvhIterator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\VBvh\VBvhMortonBuilder.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\VBvh\VBvhNode.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\VBvh\VBvhOverlap.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\VBvh\VBvhUtil.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\VBvh\VMorton.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\VBvh\VObjectPartition.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\VBvh\VPrimInfor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\VBvh\VPrimRef.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\VBvh\WorkStack.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\VBvh\common\default.h">
+      <Filter>Header Files\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\VBvh\hash\GridUtil.h">
+      <Filter>Header Files\hash</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\VBvh\hash\SpacialHash.h">
+      <Filter>Header Files\hash</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\VBvh\common\math\bbox.h">
+      <Filter>Header Files\common\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\VBvh\common\math\mymath.h">
+      <Filter>Header Files\common\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\VBvh\common\math\vec2.h">
+      <Filter>Header Files\common\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\VBvh\common\math\vec3.h">
+      <Filter>Header Files\common\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\VBvh\common\math\vec3ba.h">
+      <Filter>Header Files\common\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\VBvh\common\math\vec3fa.h">
+      <Filter>Header Files\common\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\VBvh\common\math\vec3ia.h">
+      <Filter>Header Files\common\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\VBvh\common\math\vec4.h">
+      <Filter>Header Files\common\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\VBvh\common\sys\constants.h">
+      <Filter>Header Files\common\sys</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\VBvh\common\sys\intrinsics.h">
+      <Filter>Header Files\common\sys</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\VBvh\common\sys\platform.h">
+      <Filter>Header Files\common\sys</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\VBvh\common\sys\sysinfo.h">
+      <Filter>Header Files\common\sys</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\VBvh\common\simd\simd.h">
+      <Filter>Header Files\common\simd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\VBvh\common\simd\sse.h">
+      <Filter>Header Files\common\simd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\VBvh\common\simd\sse_special.h">
+      <Filter>Header Files\common\simd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\VBvh\common\simd\sseb.h">
+      <Filter>Header Files\common\simd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\VBvh\common\simd\ssef.h">
+      <Filter>Header Files\common\simd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\VBvh\common\simd\ssei.h">
+      <Filter>Header Files\common\simd</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\VBvh\BMBvhIsect.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\VBvh\BMeshBvh.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\VBvh\BMeshBvhBuilder.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\VBvh\BMeshBvhNodeSplitter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\VBvh\VBvhUtil.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\VBvh\VObjectPartition.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\VBvh\common\simd\sse.cpp">
+      <Filter>Source Files\common\simd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\VBvh\common\sys\sysinfo.cpp">
+      <Filter>Source Files\common\sys</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

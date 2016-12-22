@@ -1,0 +1,706 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>moc;h;cpp</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="Generated Files\Debug">
+      <UniqueIdentifier>{bc4882ba-bbe7-4be6-ba90-4183e928c4d0}</UniqueIdentifier>
+      <Extensions>cpp;moc</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="Generated Files\Release">
+      <UniqueIdentifier>{30d9dbfd-dd6e-4029-851b-8eeff6b433f3}</UniqueIdentifier>
+      <Extensions>cpp;moc</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h</Extensions>
+    </Filter>
+    <Filter Include="Files\Mathematics">
+      <UniqueIdentifier>{d6f5238a-47b7-4ebf-aedf-75850ed8768e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Files\LowLevel">
+      <UniqueIdentifier>{aae109c0-3c07-478f-8ea3-96514fec25a0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Files\LowLevel\DataTypes">
+      <UniqueIdentifier>{8690a0ff-bdfa-47ea-8d86-160c93bc91c2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Files\LowLevel\Memory">
+      <UniqueIdentifier>{718f8fa8-86d9-4193-8ad0-c70021d71499}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Files\LowLevel\Timer">
+      <UniqueIdentifier>{e5ae7667-9466-4eb0-b82d-34314c0a71cf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Files\Graphics">
+      <UniqueIdentifier>{460b1a50-4c5c-4ebb-8754-8a6d90ff7613}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Files\Graphics\OpenGL4">
+      <UniqueIdentifier>{61d1d52c-1914-4931-be95-3375d416a91b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Files\Graphics\OpenGL4\InputLayout">
+      <UniqueIdentifier>{3d58cacc-4f90-43b9-a22a-12f0e7848678}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Files\Graphics\OpenGL4\Resources">
+      <UniqueIdentifier>{db531567-bcb1-45f2-a612-acc9e20d966c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Files\Graphics\OpenGL4\Resources\Buffers">
+      <UniqueIdentifier>{cc53bde1-8cae-40ff-afdb-7632a8531d41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Files\Graphics\OpenGL4\Resources\Textures">
+      <UniqueIdentifier>{4f5084a2-1e5f-4b56-9bef-9637fdb1c6ae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Files\Graphics\OpenGL4\Shaders">
+      <UniqueIdentifier>{76c18f4f-955b-4e90-81ea-2a4da4fd2d2b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Files\Graphics\OpenGL4\State">
+      <UniqueIdentifier>{03786261-62ca-4165-98ad-c64b06582651}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Files\Graphics\Resources">
+      <UniqueIdentifier>{9ca7bf16-5627-4ec3-9904-09e19b421eb5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Files\Graphics\Resources\Buffers">
+      <UniqueIdentifier>{eff32279-b8f8-4184-80d5-03bbdfa0b1f9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Files\Graphics\Resources\Textures">
+      <UniqueIdentifier>{4b7bc950-dfe3-4160-9a09-1c2cad081c85}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Files\Graphics\Shaders">
+      <UniqueIdentifier>{5457f71b-9874-4aba-94bd-9b05212c2963}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Files\Graphics\State">
+      <UniqueIdentifier>{aa0205e1-3a5d-4d41-8418-1ae8076c229c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Files\Graphics\Effects">
+      <UniqueIdentifier>{d7cbd050-7f66-4983-bec5-91d7b59062cf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Files\Mathematics\Algebra">
+      <UniqueIdentifier>{e77540f8-e56c-43ae-8301-d95d81d30aae}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\inc\render\Graphics\GteResource.h">
+      <Filter>Files\Graphics\Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\render\Graphics\GteGraphicsObject.h">
+      <Filter>Files\Graphics\Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\render\Graphics\GteDataFormat.h">
+      <Filter>Files\Graphics\Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\render\Graphics\GteBuffer.h">
+      <Filter>Files\Graphics\Resources\Buffers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\render\Graphics\GteConstantBuffer.h">
+      <Filter>Files\Graphics\Resources\Buffers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\render\Graphics\GteIndexBuffer.h">
+      <Filter>Files\Graphics\Resources\Buffers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\render\Graphics\GteIndexFormat.h">
+      <Filter>Files\Graphics\Resources\Buffers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\render\Graphics\GteIndirectArgumentsBuffer.h">
+      <Filter>Files\Graphics\Resources\Buffers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\render\Graphics\GteMemberLayout.h">
+      <Filter>Files\Graphics\Resources\Buffers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\render\Graphics\GteRawBuffer.h">
+      <Filter>Files\Graphics\Resources\Buffers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\render\Graphics\GteStructuredBuffer.h">
+      <Filter>Files\Graphics\Resources\Buffers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\render\Graphics\GteTypedBuffer.h">
+      <Filter>Files\Graphics\Resources\Buffers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\render\Graphics\GteVertexBuffer.h">
+      <Filter>Files\Graphics\Resources\Buffers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\render\Graphics\GteVertexFormat.h">
+      <Filter>Files\Graphics\Resources\Buffers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\render\GTEngineDEF.h">
+      <Filter>Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\render\Graphics\GteDrawTarget.h">
+      <Filter>Files\Graphics\Resources\Textures</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\render\Graphics\GteTexture.h">
+      <Filter>Files\Graphics\Resources\Textures</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\render\Graphics\GteTexture1.h">
+      <Filter>Files\Graphics\Resources\Textures</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\render\Graphics\GteTexture1Array.h">
+      <Filter>Files\Graphics\Resources\Textures</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\render\Graphics\GteTexture2.h">
+      <Filter>Files\Graphics\Resources\Textures</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\render\Graphics\GteTexture2Array.h">
+      <Filter>Files\Graphics\Resources\Textures</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\render\Graphics\GteTexture3.h">
+      <Filter>Files\Graphics\Resources\Textures</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\render\Graphics\GteTextureArray.h">
+      <Filter>Files\Graphics\Resources\Textures</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\render\Graphics\GteTextureBuffer.h">
+      <Filter>Files\Graphics\Resources\Textures</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\render\Graphics\GteTextureCube.h">
+      <Filter>Files\Graphics\Resources\Textures</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\render\Graphics\GteTextureCubeArray.h">
+      <Filter>Files\Graphics\Resources\Textures</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\render\Graphics\GteTextureDS.h">
+      <Filter>Files\Graphics\Resources\Textures</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\render\Graphics\GteTextureRT.h">
+      <Filter>Files\Graphics\Resources\Textures</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\render\Graphics\GteTextureSingle.h">
+      <Filter>Files\Graphics\Resources\Textures</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\render\Graphics\GteBlendState.h">
+      <Filter>Files\Graphics\State</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\render\Graphics\GteDepthStencilState.h">
+      <Filter>Files\Graphics\State</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\render\Graphics\GteDrawingState.h">
+      <Filter>Files\Graphics\State</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\render\Graphics\GteRasterizerState.h">
+      <Filter>Files\Graphics\State</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\render\Graphics\GteSamplerState.h">
+      <Filter>Files\Graphics\State</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\render\Graphics\GteGeometryShader.h">
+      <Filter>Files\Graphics\Shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\render\Graphics\GtePixelShader.h">
+      <Filter>Files\Graphics\Shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\render\Graphics\GteProgramDefines.h">
+      <Filter>Files\Graphics\Shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\render\Graphics\GteProgramFactory.h">
+      <Filter>Files\Graphics\Shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\render\Graphics\GteShader.h">
+      <Filter>Files\Graphics\Shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\render\Graphics\GteVertexShader.h">
+      <Filter>Files\Graphics\Shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\render\Graphics\GteVisualProgram.h">
+      <Filter>Files\Graphics\Shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\render\Graphics\GL4\GteGL4InputLayout.h">
+      <Filter>Files\Graphics\OpenGL4\InputLayout</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\render\Graphics\GL4\GteGL4InputLayoutManager.h">
+      <Filter>Files\Graphics\OpenGL4\InputLayout</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\render\Graphics\GL4\GteGLFunction.h">
+      <Filter>Files\Graphics\OpenGL4</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\render\Graphics\GL4\GteGL4DrawTarget.h">
+      <Filter>Files\Graphics\OpenGL4\Resources\Textures</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\render\Graphics\GL4\GteGL4Texture.h">
+      <Filter>Files\Graphics\OpenGL4\Resources\Textures</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\render\Graphics\GL4\GteGL4Texture2.h">
+      <Filter>Files\Graphics\OpenGL4\Resources\Textures</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\render\Graphics\GL4\GteGL4Texture3.h">
+      <Filter>Files\Graphics\OpenGL4\Resources\Textures</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\render\Graphics\GL4\GteGL4TextureCube.h">
+      <Filter>Files\Graphics\OpenGL4\Resources\Textures</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\render\Graphics\GL4\GteGL4TextureDS.h">
+      <Filter>Files\Graphics\OpenGL4\Resources\Textures</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\render\Graphics\GL4\GteGL4TextureRT.h">
+      <Filter>Files\Graphics\OpenGL4\Resources\Textures</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\render\Graphics\GL4\GteGL4TextureSingle.h">
+      <Filter>Files\Graphics\OpenGL4\Resources\Textures</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\render\Graphics\GL4\GteGL4TextureArray.h">
+      <Filter>Files\Graphics\OpenGL4\Resources\Textures</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\render\Graphics\GL4\GteGLSLProgramFactory.h">
+      <Filter>Files\Graphics\OpenGL4\Shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\render\Graphics\GL4\GteGLSLVisualProgram.h">
+      <Filter>Files\Graphics\OpenGL4\Shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\render\Graphics\GL4\GteGLSLReflection.h">
+      <Filter>Files\Graphics\OpenGL4\Shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\render\Graphics\GL4\GteGLSLComputeProgram.h">
+      <Filter>Files\Graphics\OpenGL4\Shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\render\Graphics\GL4\GteGL4BlendState.h">
+      <Filter>Files\Graphics\OpenGL4\State</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\render\Graphics\GL4\GteGL4DepthStencilState.h">
+      <Filter>Files\Graphics\OpenGL4\State</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\render\Graphics\GL4\GteGL4DrawingState.h">
+      <Filter>Files\Graphics\OpenGL4\State</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\render\Graphics\GL4\GteGL4RasterizerState.h">
+      <Filter>Files\Graphics\OpenGL4\State</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\render\Graphics\GL4\GteGL4SamplerState.h">
+      <Filter>Files\Graphics\OpenGL4\State</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\render\Graphics\GteVisualEffect.h">
+      <Filter>Files\Graphics\Effects</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\render\Graphics\GteMaterial.h">
+      <Filter>Files\Graphics\Effects</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\render\Graphics\GteLightingEffect.h">
+      <Filter>Files\Graphics\Effects</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\render\Graphics\GteLighting.h">
+      <Filter>Files\Graphics\Effects</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\render\Graphics\GteLightCameraGeometry.h">
+      <Filter>Files\Graphics\Effects</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\render\Graphics\GteVertexColorEffect.h">
+      <Filter>Files\Graphics\Effects</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\render\Graphics\GteAmbientLightEffect.h">
+      <Filter>Files\Graphics\Effects</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\render\Graphics\GteConstantColorEffect.h">
+      <Filter>Files\Graphics\Effects</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\render\Graphics\GteDirectionalLightEffect.h">
+      <Filter>Files\Graphics\Effects</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\render\Graphics\GtePointLightEffect.h">
+      <Filter>Files\Graphics\Effects</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\render\Graphics\GteSpotLightEffect.h">
+      <Filter>Files\Graphics\Effects</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\render\Graphics\GteDirectionalLightTextureEffect.h">
+      <Filter>Files\Graphics\Effects</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\render\Graphics\GteOverlayEffect.h">
+      <Filter>Files\Graphics\Effects</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\render\Graphics\GtePointLightTextureEffect.h">
+      <Filter>Files\Graphics\Effects</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\render\Graphics\GteTextEffect.h">
+      <Filter>Files\Graphics\Effects</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\render\Graphics\GteTexture2Effect.h">
+      <Filter>Files\Graphics\Effects</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\render\Graphics\GteTexture3Effect.h">
+      <Filter>Files\Graphics\Effects</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\render\Graphics\GL4\GteGL4Engine.h">
+      <Filter>Files\Graphics\OpenGL4</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\render\Graphics\GL4\GteGL4VertexBuffer.h">
+      <Filter>Files\Graphics\OpenGL4\Resources\Buffers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\render\Graphics\GL4\GteGL4IndexBuffer.h">
+      <Filter>Files\Graphics\OpenGL4\Resources\Buffers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\render\Graphics\GL4\GteGL4ConstantBuffer.h">
+      <Filter>Files\Graphics\OpenGL4\Resources\Buffers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\render\Graphics\GL4\GteGL4Buffer.h">
+      <Filter>Files\Graphics\OpenGL4\Resources\Buffers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\render\Graphics\GL4\GteGL4Resource.h">
+      <Filter>Files\Graphics\OpenGL4\Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\render\Graphics\GteComputeProgram.h">
+      <Filter>Files\Graphics\Shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\render\Graphics\GteComputeShader.h">
+      <Filter>Files\Graphics\Shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\render\Graphics\GL4\GteGL4GraphicsObject.h">
+      <Filter>Files\Graphics\OpenGL4</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\render\LowLevel\GteArray2.h">
+      <Filter>Files\LowLevel\DataTypes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\render\LowLevel\GteAtomicMinMax.h">
+      <Filter>Files\LowLevel\DataTypes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\render\LowLevel\GteComputeModel.h">
+      <Filter>Files\LowLevel\DataTypes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\render\LowLevel\GteMinHeap.h">
+      <Filter>Files\LowLevel\DataTypes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\render\LowLevel\GteRangeIteration.h">
+      <Filter>Files\LowLevel\DataTypes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\render\LowLevel\GteWrapper.h">
+      <Filter>Files\LowLevel\DataTypes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\render\LowLevel\GteThreadSafeMap.h">
+      <Filter>Files\LowLevel\DataTypes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\render\LowLevel\GteThreadSafeQueue.h">
+      <Filter>Files\LowLevel\DataTypes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\render\LowLevel\GteTimer.h">
+      <Filter>Files\LowLevel\Timer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\render\LowLevel\GteMemory.h">
+      <Filter>Files\LowLevel\Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\render\Graphics\GteFont.h">
+      <Filter>Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\render\Graphics\GteFontArialW400H18.h">
+      <Filter>Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\render\Graphics\GteGEDrawTarget.h">
+      <Filter>Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\render\Graphics\GteGEInputLayoutManager.h">
+      <Filter>Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\render\Graphics\GteGEObject.h">
+      <Filter>Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\render\Graphics\GteGraphicsEngine.h">
+      <Filter>Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\render\GTGraphics.h">
+      <Filter>Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\render\Mathematics\GteBitHacks.h">
+      <Filter>Files\Mathematics\Algebra</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\render\Graphics\GteMeshFactory.h">
+      <Filter>Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\render\Graphics\GteTexture2ColorEffect.h">
+      <Filter>Files\Graphics\Effects</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\render\Graphics\GteResource.cpp">
+      <Filter>Files\Graphics\Resources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\render\Graphics\GteGraphicsObject.cpp">
+      <Filter>Files\Graphics\Resources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\render\Graphics\GteDataFormat.cpp">
+      <Filter>Files\Graphics\Resources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\render\Graphics\GteBuffer.cpp">
+      <Filter>Files\Graphics\Resources\Buffers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\render\Graphics\GteConstantBuffer.cpp">
+      <Filter>Files\Graphics\Resources\Buffers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\render\Graphics\GteIndexBuffer.cpp">
+      <Filter>Files\Graphics\Resources\Buffers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\render\Graphics\GteIndirectArgumentsBuffer.cpp">
+      <Filter>Files\Graphics\Resources\Buffers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\render\Graphics\GteRawBuffer.cpp">
+      <Filter>Files\Graphics\Resources\Buffers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\render\Graphics\GteStructuredBuffer.cpp">
+      <Filter>Files\Graphics\Resources\Buffers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\render\Graphics\GteTypedBuffer.cpp">
+      <Filter>Files\Graphics\Resources\Buffers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\render\Graphics\GteVertexBuffer.cpp">
+      <Filter>Files\Graphics\Resources\Buffers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\render\Graphics\GteVertexFormat.cpp">
+      <Filter>Files\Graphics\Resources\Buffers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\render\Graphics\GteDrawTarget.cpp">
+      <Filter>Files\Graphics\Resources\Textures</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\render\Graphics\GteTexture.cpp">
+      <Filter>Files\Graphics\Resources\Textures</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\render\Graphics\GteTexture1.cpp">
+      <Filter>Files\Graphics\Resources\Textures</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\render\Graphics\GteTexture1Array.cpp">
+      <Filter>Files\Graphics\Resources\Textures</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\render\Graphics\GteTexture2.cpp">
+      <Filter>Files\Graphics\Resources\Textures</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\render\Graphics\GteTexture2Array.cpp">
+      <Filter>Files\Graphics\Resources\Textures</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\render\Graphics\GteTexture3.cpp">
+      <Filter>Files\Graphics\Resources\Textures</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\render\Graphics\GteTextureArray.cpp">
+      <Filter>Files\Graphics\Resources\Textures</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\render\Graphics\GteTextureBuffer.cpp">
+      <Filter>Files\Graphics\Resources\Textures</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\render\Graphics\GteTextureCube.cpp">
+      <Filter>Files\Graphics\Resources\Textures</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\render\Graphics\GteTextureCubeArray.cpp">
+      <Filter>Files\Graphics\Resources\Textures</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\render\Graphics\GteTextureDS.cpp">
+      <Filter>Files\Graphics\Resources\Textures</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\render\Graphics\GteTextureRT.cpp">
+      <Filter>Files\Graphics\Resources\Textures</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\render\Graphics\GteTextureSingle.cpp">
+      <Filter>Files\Graphics\Resources\Textures</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\render\Graphics\GteBlendState.cpp">
+      <Filter>Files\Graphics\State</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\render\Graphics\GteDepthStencilState.cpp">
+      <Filter>Files\Graphics\State</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\render\Graphics\GteDrawingState.cpp">
+      <Filter>Files\Graphics\State</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\render\Graphics\GteRasterizerState.cpp">
+      <Filter>Files\Graphics\State</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\render\Graphics\GteSamplerState.cpp">
+      <Filter>Files\Graphics\State</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\render\Graphics\GteGeometryShader.cpp">
+      <Filter>Files\Graphics\Shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\render\Graphics\GtePixelShader.cpp">
+      <Filter>Files\Graphics\Shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\render\Graphics\GteProgramDefines.cpp">
+      <Filter>Files\Graphics\Shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\render\Graphics\GteProgramFactory.cpp">
+      <Filter>Files\Graphics\Shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\render\Graphics\GteShader.cpp">
+      <Filter>Files\Graphics\Shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\render\Graphics\GteVertexShader.cpp">
+      <Filter>Files\Graphics\Shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\render\Graphics\GteVisualProgram.cpp">
+      <Filter>Files\Graphics\Shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\render\Graphics\GL4\GteGL4InputLayout.cpp">
+      <Filter>Files\Graphics\OpenGL4\InputLayout</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\render\Graphics\GL4\GteGL4InputLayoutManager.cpp">
+      <Filter>Files\Graphics\OpenGL4\InputLayout</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\render\Graphics\GL4\GteGLFunction.cpp">
+      <Filter>Files\Graphics\OpenGL4</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\render\Graphics\GL4\GteGL4DrawTarget.cpp">
+      <Filter>Files\Graphics\OpenGL4\Resources\Textures</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\render\Graphics\GL4\GteGL4Texture.cpp">
+      <Filter>Files\Graphics\OpenGL4\Resources\Textures</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\render\Graphics\GL4\GteGL4Texture2.cpp">
+      <Filter>Files\Graphics\OpenGL4\Resources\Textures</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\render\Graphics\GL4\GteGL4TextureSingle.cpp">
+      <Filter>Files\Graphics\OpenGL4\Resources\Textures</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\render\Graphics\GL4\GteGL4TextureRT.cpp">
+      <Filter>Files\Graphics\OpenGL4\Resources\Textures</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\render\Graphics\GL4\GteGL4TextureDS.cpp">
+      <Filter>Files\Graphics\OpenGL4\Resources\Textures</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\render\Graphics\GL4\GteGL4TextureCube.cpp">
+      <Filter>Files\Graphics\OpenGL4\Resources\Textures</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\render\Graphics\GL4\GteGL4Texture3.cpp">
+      <Filter>Files\Graphics\OpenGL4\Resources\Textures</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\render\Graphics\GL4\GteGL4TextureArray.cpp">
+      <Filter>Files\Graphics\OpenGL4\Resources\Textures</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\render\Graphics\GL4\GteGLSLVisualProgram.cpp">
+      <Filter>Files\Graphics\OpenGL4\Shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\render\Graphics\GL4\GteGLSLReflection.cpp">
+      <Filter>Files\Graphics\OpenGL4\Shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\render\Graphics\GL4\GteGLSLProgramFactory.cpp">
+      <Filter>Files\Graphics\OpenGL4\Shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\render\Graphics\GL4\GteGLSLComputeProgram.cpp">
+      <Filter>Files\Graphics\OpenGL4\Shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\render\Graphics\GL4\GteGL4BlendState.cpp">
+      <Filter>Files\Graphics\OpenGL4\State</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\render\Graphics\GL4\GteGL4DepthStencilState.cpp">
+      <Filter>Files\Graphics\OpenGL4\State</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\render\Graphics\GL4\GteGL4DrawingState.cpp">
+      <Filter>Files\Graphics\OpenGL4\State</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\render\Graphics\GL4\GteGL4RasterizerState.cpp">
+      <Filter>Files\Graphics\OpenGL4\State</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\render\Graphics\GL4\GteGL4SamplerState.cpp">
+      <Filter>Files\Graphics\OpenGL4\State</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\render\Graphics\GteLighting.cpp">
+      <Filter>Files\Graphics\Effects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\render\Graphics\GteLightCameraGeometry.cpp">
+      <Filter>Files\Graphics\Effects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\render\Graphics\GteMaterial.cpp">
+      <Filter>Files\Graphics\Effects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\render\Graphics\GteVisualEffect.cpp">
+      <Filter>Files\Graphics\Effects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\render\Graphics\GteLightingEffect.cpp">
+      <Filter>Files\Graphics\Effects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\render\Graphics\GteVertexColorEffect.cpp">
+      <Filter>Files\Graphics\Effects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\render\Graphics\GteAmbientLightEffect.cpp">
+      <Filter>Files\Graphics\Effects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\render\Graphics\GteConstantColorEffect.cpp">
+      <Filter>Files\Graphics\Effects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\render\Graphics\GteDirectionalLightEffect.cpp">
+      <Filter>Files\Graphics\Effects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\render\Graphics\GtePointLightEffect.cpp">
+      <Filter>Files\Graphics\Effects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\render\Graphics\GteSpotLightEffect.cpp">
+      <Filter>Files\Graphics\Effects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\render\Graphics\GteDirectionalLightTextureEffect.cpp">
+      <Filter>Files\Graphics\Effects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\render\Graphics\GteOverlayEffect.cpp">
+      <Filter>Files\Graphics\Effects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\render\Graphics\GtePointLightTextureEffect.cpp">
+      <Filter>Files\Graphics\Effects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\render\Graphics\GteTextEffect.cpp">
+      <Filter>Files\Graphics\Effects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\render\Graphics\GteTexture2Effect.cpp">
+      <Filter>Files\Graphics\Effects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\render\Graphics\GteTexture3Effect.cpp">
+      <Filter>Files\Graphics\Effects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\render\Graphics\GL4\GteGL4Engine.cpp">
+      <Filter>Files\Graphics\OpenGL4</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\render\Graphics\GL4\GteGL4VertexBuffer.cpp">
+      <Filter>Files\Graphics\OpenGL4\Resources\Buffers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\render\Graphics\GL4\GteGL4IndexBuffer.cpp">
+      <Filter>Files\Graphics\OpenGL4\Resources\Buffers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\render\Graphics\GL4\GteGL4ConstantBuffer.cpp">
+      <Filter>Files\Graphics\OpenGL4\Resources\Buffers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\render\Graphics\GL4\GteGL4Buffer.cpp">
+      <Filter>Files\Graphics\OpenGL4\Resources\Buffers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\render\Graphics\GL4\GteGL4Resource.cpp">
+      <Filter>Files\Graphics\OpenGL4\Resources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\render\Graphics\GteComputeProgram.cpp">
+      <Filter>Files\Graphics\Shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\render\Graphics\GteComputeShader.cpp">
+      <Filter>Files\Graphics\Shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\render\Graphics\GL4\GteGL4GraphicsObject.cpp">
+      <Filter>Files\Graphics\OpenGL4</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\render\LowLevel\GteTimer.cpp">
+      <Filter>Files\LowLevel\Timer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\render\LowLevel\GteWrapper.cpp">
+      <Filter>Files\LowLevel\DataTypes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\render\Graphics\GteFont.cpp">
+      <Filter>Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\render\Graphics\GteFontArialW400H18.cpp">
+      <Filter>Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\render\Graphics\GteGEDrawTarget.cpp">
+      <Filter>Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\render\Graphics\GteGEObject.cpp">
+      <Filter>Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\render\Graphics\GteGraphicsEngine.cpp">
+      <Filter>Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\render\Mathematics\GteBitHacks.cpp">
+      <Filter>Files\Mathematics\Algebra</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\render\Graphics\GteMeshFactory.cpp">
+      <Filter>Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\render\Graphics\GteTexture2ColorEffect.cpp">
+      <Filter>Files\Graphics\Effects</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

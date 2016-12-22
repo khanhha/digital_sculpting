@@ -1,0 +1,229 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;cxx;c;def</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h</Extensions>
+    </Filter>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>moc;h;cpp</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="Generated Files\Debug">
+      <UniqueIdentifier>{06dd209f-c8c9-458e-984f-56fffe79b6e1}</UniqueIdentifier>
+      <Extensions>cpp;moc</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="Generated Files\Release">
+      <UniqueIdentifier>{a0226247-1391-4f3c-9cce-b22bfc4e3766}</UniqueIdentifier>
+      <Extensions>cpp;moc</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="Header Files\Operator">
+      <UniqueIdentifier>{cb23d8f3-977c-499f-a1fb-456f4ced3eeb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Operator">
+      <UniqueIdentifier>{e2f1d755-40c9-42bf-a0f0-aee3b70d34ca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\vcg">
+      <UniqueIdentifier>{53e03c92-751b-4b1a-9f41-e3376c69ec61}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\vsculpt\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\vsculpt\QtQuickAppViewer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_QtQuickAppViewer.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_QtQuickAppViewer.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\vsculpt\VEventHandler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\vsculpt\Operator\VViewEditOp.cpp">
+      <Filter>Source Files\Operator</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\vsculpt\Operator\VDropMeshOp.cpp">
+      <Filter>Source Files\Operator</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\vendor\vcg\vcglib\wrap\ply\plylib.cpp">
+      <Filter>Header Files\vcg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\vsculpt\Operator\VSculptBrushOp.cpp">
+      <Filter>Source Files\Operator</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\vsculpt\VView3DRegionQuickItem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_VView3DRegionQuickItem.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_VView3DRegionQuickItem.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\vsculpt\Operator\VView3DEditBoxOp.cpp">
+      <Filter>Source Files\Operator</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\qrc_K3DStudio-2.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\qrc_qml.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\qrc_K3DStudio-3.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\qrc_K3DStudio-4.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\qrc_K3DStudio-5.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\vsculpt\VOperatorQmlAdaptor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_VOperatorQmlAdaptor.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_VOperatorQmlAdaptor.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\vsculpt\Operator\VOperator.cpp">
+      <Filter>Source Files\Operator</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\vsculpt\Operator\VOpTemplate.cpp">
+      <Filter>Source Files\Operator</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\vsculpt\Operator\VSculptConfigOp.cpp">
+      <Filter>Source Files\Operator</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\vsculpt\Operator\VMeshSmoothOp.cpp">
+      <Filter>Source Files\Operator</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_VOpTemplate.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_VOpTemplate.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\vsculpt\Operator\VMeshDecimateOp.cpp">
+      <Filter>Source Files\Operator</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\vsculpt\Operator\VMeshRemeshOp.cpp">
+      <Filter>Source Files\Operator</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\vsculpt\Operator\VManipulatorOp.cpp">
+      <Filter>Source Files\Operator</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\vsculpt\Operator\VCommonConfigOp.cpp">
+      <Filter>Source Files\Operator</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\vsculpt\Operator\VMeshSelfIsectOp.cpp">
+      <Filter>Source Files\Operator</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\vsculpt\Operator\VMeshBooleanOp.cpp">
+      <Filter>Source Files\Operator</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\inc\vsculpt\QtQuickAppViewer.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\inc\vsculpt\VView3DRegionQuickItem.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\resource\K3DStudio-2.qrc">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\resource\qml.qrc">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\resource\K3DStudio-3.qrc">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\resource\K3DStudio-4.qrc">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\resource\K3DStudio-5.qrc">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\inc\vsculpt\VOperatorQmlAdaptor.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\inc\vsculpt\Operator\VOperator.h">
+      <Filter>Header Files\Operator</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\inc\vsculpt\Operator\VOpTemplate.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\inc\vsculpt\VCommon.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\vsculpt\VEventHandler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\vsculpt\Operator\VDropMeshOp.h">
+      <Filter>Header Files\Operator</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\vendor\vcg\vcglib\wrap\ply\plylib.h">
+      <Filter>Header Files\vcg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\vendor\vcg\vcglib\wrap\ply\plystuff.h">
+      <Filter>Header Files\vcg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\vsculpt\Operator\VSculptBrushOp.h">
+      <Filter>Header Files\Operator</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\vsculpt\Operator\VViewEditOp.h">
+      <Filter>Header Files\Operator</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\vsculpt\Operator\VView3DEditBoxOp.h">
+      <Filter>Header Files\Operator</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\vsculpt\Operator\VSculptConfigOp.h">
+      <Filter>Header Files\Operator</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\vsculpt\Operator\VMeshSmoothOp.h">
+      <Filter>Header Files\Operator</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\vsculpt\Operator\VMeshDecimateOp.h">
+      <Filter>Header Files\Operator</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\vsculpt\Operator\VMeshRemeshOp.h">
+      <Filter>Header Files\Operator</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\vsculpt\Operator\VManipulatorOp.h">
+      <Filter>Header Files\Operator</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\vsculpt\Operator\VCommonConfigOp.h">
+      <Filter>Header Files\Operator</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\vsculpt\Operator\VMeshSelfIsectOp.h">
+      <Filter>Header Files\Operator</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\vsculpt\Operator\VMeshBooleanOp.h">
+      <Filter>Header Files\Operator</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\accel">
+      <UniqueIdentifier>{ef2f2967-34d0-4db0-aa75-cfb2537a945e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\isct">
+      <UniqueIdentifier>{3f209d01-25c4-48c9-a355-b760b9fbe5d1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\math">
+      <UniqueIdentifier>{5eb453a8-4424-40f8-aeeb-fe77209c001f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\util">
+      <UniqueIdentifier>{200b995d-3975-4060-868a-8f968e01155b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\accel">
+      <UniqueIdentifier>{ac58849c-b33a-4c95-a8ef-9bc6f75b776c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\file_formats">
+      <UniqueIdentifier>{20705011-c1d7-4aad-900c-47f325cda17b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\isct">
+      <UniqueIdentifier>{8815c77c-9ae6-4789-8222-e8db7b9d08e5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\math">
+      <UniqueIdentifier>{972c40d9-3723-4a48-9603-68784daf71d2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\mesh">
+      <UniqueIdentifier>{f1fff423-c488-428e-8e21-0bf29d22ede0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\util">
+      <UniqueIdentifier>{15ccaeb7-9b5f-4ff4-b9bf-ee4ead01c3b2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\rawmesh">
+      <UniqueIdentifier>{aa7f7bb5-f757-421e-8f07-d2d77e39a5b7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\bm_isect">
+      <UniqueIdentifier>{ee1e8461-1213-44e0-b454-3fbd79c9be0b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\bm_isect">
+      <UniqueIdentifier>{3d930b9a-8c04-4a99-bf9f-5b158e86979f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\inc\Boolean\accel\aabvh.h">
+      <Filter>Header Files\accel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\Boolean\bm\bm_isct.h">
+      <Filter>Header Files\bm_isect</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\Boolean\bm\bm_isct_bool_include.h">
+      <Filter>Header Files\bm_isect</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\Boolean\bm\bm_isct_boolean.h">
+      <Filter>Header Files\bm_isect</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\Boolean\bm\bm_isct_isct_problem.h">
+      <Filter>Header Files\bm_isect</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\Boolean\bm\bm_isct_outer_hull_exact.h">
+      <Filter>Header Files\bm_isect</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\Boolean\bm\bm_isct_tri_problem.h">
+      <Filter>Header Files\bm_isect</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\Boolean\isct\absext4.h">
+      <Filter>Header Files\isct</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\Boolean\isct\empty3d.h">
+      <Filter>Header Files\isct</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\Boolean\isct\ext4.h">
+      <Filter>Header Files\isct</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\Boolean\isct\fixext4.h">
+      <Filter>Header Files\isct</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\Boolean\isct\fixint.h">
+      <Filter>Header Files\isct</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\Boolean\isct\gmpext4.h">
+      <Filter>Header Files\isct</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\Boolean\isct\quantization.h">
+      <Filter>Header Files\isct</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\Boolean\isct\triangle.h">
+      <Filter>Header Files\isct</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\Boolean\isct\unsafeRayTriIsct.h">
+      <Filter>Header Files\isct</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\Boolean\math\bbox.h">
+      <Filter>Header Files\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\Boolean\math\ray.h">
+      <Filter>Header Files\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\Boolean\math\vec.h">
+      <Filter>Header Files\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\Boolean\util\iterPool.h">
+      <Filter>Header Files\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\Boolean\util\memPool.h">
+      <Filter>Header Files\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\Boolean\util\prelude.h">
+      <Filter>Header Files\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\Boolean\util\shortVec.h">
+      <Filter>Header Files\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\Boolean\util\unionFind.h">
+      <Filter>Header Files\util</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\inc\Boolean\isct\empty3d.cpp">
+      <Filter>Header Files\isct</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\inc\Boolean\isct\quantization.cpp">
+      <Filter>Header Files\isct</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\inc\Boolean\isct\triangle.c">
+      <Filter>Header Files\isct</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\inc\Boolean\util\log.cpp">
+      <Filter>Header Files\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\inc\Boolean\util\timer.cpp">
+      <Filter>Header Files\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Boolean\bm\bm_isct.cpp">
+      <Filter>Source Files\bm_isect</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Boolean\bm\bm_isct_bool_include.cpp">
+      <Filter>Source Files\bm_isect</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Boolean\bm\bm_isct_boolean.cpp">
+      <Filter>Source Files\bm_isect</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Boolean\bm\bm_isct_isct_problem.cpp">
+      <Filter>Source Files\bm_isect</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Boolean\bm\bm_isct_outer_hull_exact.cpp">
+      <Filter>Source Files\bm_isect</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Boolean\bm\bm_isct_tri_problem.cpp">
+      <Filter>Source Files\bm_isect</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

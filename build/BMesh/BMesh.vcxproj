@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{9531676A-1CE0-4734-9881-2897135D5B79}</ProjectGuid>
+    <RootNamespace>BMesh</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>..\..\lib\</OutDir>
+    <TargetName>$(ProjectName)d</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>..\..\lib\</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>..\..\inc\BMesh;..\..\vendor\eigen;..\..\vendor\boost;..\..\inc;..\..\vendor\tbb\include;$(QTDIR_56)\include;$(QTDIR_56)\include\QtCore;$(QTDIR_56)\include\qtmain;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>BOOST_DISABLE_THREADS;_SCL_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>..\..\inc\BMesh;..\..\vendor\eigen;..\..\vendor\boost;..\..\inc;..\..\vendor\tbb\include;$(QTDIR_56)\include;$(QTDIR_56)\include\QtCore;$(QTDIR_56)\include\qtmain;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>BOOST_DISABLE_THREADS;_SCL_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\inc\BMesh\BMCompilerTypeCheck.h" />
+    <ClInclude Include="..\..\inc\BMesh\BMCustomData.h" />
+    <ClInclude Include="..\..\inc\BMesh\BMesh.h" />
+    <ClInclude Include="..\..\inc\BMesh\BMeshClass.h" />
+    <ClInclude Include="..\..\inc\BMesh\BMeshCore.h" />
+    <ClInclude Include="..\..\inc\BMesh\BMeshInline.h" />
+    <ClInclude Include="..\..\inc\BMesh\BMeshIterators.h" />
+    <ClInclude Include="..\..\inc\BMesh\BMeshPolygon.h" />
+    <ClInclude Include="..\..\inc\BMesh\BMeshQueries.h" />
+    <ClInclude Include="..\..\inc\BMesh\BMeshStructure.h" />
+    <ClInclude Include="..\..\inc\BMesh\BMeshUtility.h" />
+    <ClInclude Include="..\..\inc\BMesh\BMUtilDefine.h" />
+    <ClInclude Include="..\..\inc\BMesh\Tools\BMeshDecimate.h" />
+    <ClInclude Include="..\..\inc\BMesh\Tools\BMeshDiffCurvature.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\BMesh\BMCustomData.cpp" />
+    <ClCompile Include="..\..\src\BMesh\BMeshCore.cpp" />
+    <ClCompile Include="..\..\src\BMesh\BMeshIterators.cpp" />
+    <ClCompile Include="..\..\src\BMesh\BMeshPolygon.cpp" />
+    <ClCompile Include="..\..\src\BMesh\BMeshQueries.cpp" />
+    <ClCompile Include="..\..\src\BMesh\BMeshStructure.cpp" />
+    <ClCompile Include="..\..\src\BMesh\BMeshUtility.cpp" />
+    <ClCompile Include="..\..\src\BMesh\Tools\BMeshDecimate.cpp" />
+    <ClCompile Include="..\..\src\BMesh\Tools\BMeshDiffCurvature.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

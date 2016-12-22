@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{2581FDA4-7E75-4FB8-9EE1-92A9EB70911B}</ProjectGuid>
+    <RootNamespace>VBvh</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>..\..\lib\</OutDir>
+    <TargetName>$(ProjectName)d</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>..\..\lib\</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>..\..\inc;..\..\inc\VBvh;..\..\inc\bvh;..\..\inc\bvh\common;..\..\vendor\tbb\include;..\..\vendor\eigen;..\..\vendor\boost;$(QTDIR_56)\include;$(QTDIR_56)\include\qtmain;$(QTDIR_56)\include\QtCore;$(QTDIR_56)\include\QtGui;..\..\inc\VBvh\common;..\..\vendor;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NOMINMAX;BOOST_DISABLE_THREADS;_USE_MATH_DEFINES;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>..\..\inc;..\..\inc\VBvh;..\..\inc\bvh;..\..\inc\bvh\common;..\..\vendor\tbb\include;..\..\vendor\eigen;..\..\vendor\boost;$(QTDIR_56)\include;$(QTDIR_56)\include\qtmain;$(QTDIR_56)\include\QtCore;$(QTDIR_56)\include\QtGui;..\..\inc\VBvh\common;..\..\vendor;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NOMINMAX;BOOST_DISABLE_THREADS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\inc\VBvh\BMBvhIsect.h" />
+    <ClInclude Include="..\..\inc\VBvh\BMeshBvh.h" />
+    <ClInclude Include="..\..\inc\VBvh\BMeshBvhBuilder.h" />
+    <ClInclude Include="..\..\inc\VBvh\BMeshBvhNodeSplitter.h" />
+    <ClInclude Include="..\..\inc\VBvh\common\default.h" />
+    <ClInclude Include="..\..\inc\VBvh\common\math\bbox.h" />
+    <ClInclude Include="..\..\inc\VBvh\common\math\mymath.h" />
+    <ClInclude Include="..\..\inc\VBvh\common\math\vec2.h" />
+    <ClInclude Include="..\..\inc\VBvh\common\math\vec3.h" />
+    <ClInclude Include="..\..\inc\VBvh\common\math\vec3ba.h" />
+    <ClInclude Include="..\..\inc\VBvh\common\math\vec3fa.h" />
+    <ClInclude Include="..\..\inc\VBvh\common\math\vec3ia.h" />
+    <ClInclude Include="..\..\inc\VBvh\common\math\vec4.h" />
+    <ClInclude Include="..\..\inc\VBvh\common\simd\simd.h" />
+    <ClInclude Include="..\..\inc\VBvh\common\simd\sse.h" />
+    <ClInclude Include="..\..\inc\VBvh\common\simd\sseb.h" />
+    <ClInclude Include="..\..\inc\VBvh\common\simd\ssef.h" />
+    <ClInclude Include="..\..\inc\VBvh\common\simd\ssei.h" />
+    <ClInclude Include="..\..\inc\VBvh\common\simd\sse_special.h" />
+    <ClInclude Include="..\..\inc\VBvh\common\sys\constants.h" />
+    <ClInclude Include="..\..\inc\VBvh\common\sys\intrinsics.h" />
+    <ClInclude Include="..\..\inc\VBvh\common\sys\platform.h" />
+    <ClInclude Include="..\..\inc\VBvh\common\sys\sysinfo.h" />
+    <ClInclude Include="..\..\inc\VBvh\hash\GridUtil.h" />
+    <ClInclude Include="..\..\inc\VBvh\hash\SpacialHash.h" />
+    <ClInclude Include="..\..\inc\VBvh\VBvhBinBuilder.h" />
+    <ClInclude Include="..\..\inc\VBvh\VBvhDefine.h" />
+    <ClInclude Include="..\..\inc\VBvh\VBvhIterator.h" />
+    <ClInclude Include="..\..\inc\VBvh\VBvhMortonBuilder.h" />
+    <ClInclude Include="..\..\inc\VBvh\VBvhNode.h" />
+    <ClInclude Include="..\..\inc\VBvh\VBvhOverlap.h" />
+    <ClInclude Include="..\..\inc\VBvh\VBvhUtil.h" />
+    <ClInclude Include="..\..\inc\VBvh\VMorton.h" />
+    <ClInclude Include="..\..\inc\VBvh\VObjectPartition.h" />
+    <ClInclude Include="..\..\inc\VBvh\VPrimInfor.h" />
+    <ClInclude Include="..\..\inc\VBvh\VPrimRef.h" />
+    <ClInclude Include="..\..\inc\VBvh\WorkStack.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\VBvh\BMBvhIsect.cpp" />
+    <ClCompile Include="..\..\src\VBvh\BMeshBvh.cpp" />
+    <ClCompile Include="..\..\src\VBvh\BMeshBvhBuilder.cpp" />
+    <ClCompile Include="..\..\src\VBvh\BMeshBvhNodeSplitter.cpp" />
+    <ClCompile Include="..\..\src\VBvh\common\simd\sse.cpp" />
+    <ClCompile Include="..\..\src\VBvh\common\sys\sysinfo.cpp" />
+    <ClCompile Include="..\..\src\VBvh\VBvhUtil.cpp" />
+    <ClCompile Include="..\..\src\VBvh\VObjectPartition.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

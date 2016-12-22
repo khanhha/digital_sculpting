@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\inc\Sculpt\AnchoredStroke.h" />
+    <ClInclude Include="..\..\inc\Sculpt\AverageBrushDataOp.h" />
+    <ClInclude Include="..\..\inc\Sculpt\BezierCurve.h" />
+    <ClInclude Include="..\..\inc\Sculpt\BMSplitCollapseOp.h" />
+    <ClInclude Include="..\..\inc\Sculpt\brush\ClayBrushOp.h" />
+    <ClInclude Include="..\..\inc\Sculpt\brush\ClayStripBrushOp.h" />
+    <ClInclude Include="..\..\inc\Sculpt\brush\CreaseBrushOp.h" />
+    <ClInclude Include="..\..\inc\Sculpt\brush\DrawBrushOp.h" />
+    <ClInclude Include="..\..\inc\Sculpt\brush\FillBrushOp.h" />
+    <ClInclude Include="..\..\inc\Sculpt\brush\FlattenBrushOp.h" />
+    <ClInclude Include="..\..\inc\Sculpt\brush\GrabBrushOp.h" />
+    <ClInclude Include="..\..\inc\Sculpt\brush\InflateBrushOp.h" />
+    <ClInclude Include="..\..\inc\Sculpt\brush\NudgetBrushOp.h" />
+    <ClInclude Include="..\..\inc\Sculpt\brush\PinchBrushOp.h" />
+    <ClInclude Include="..\..\inc\Sculpt\brush\RotateBrushOp.h" />
+    <ClInclude Include="..\..\inc\Sculpt\brush\SculptStroke.h" />
+    <ClInclude Include="..\..\inc\Sculpt\brush\SmoothBrushOp.h" />
+    <ClInclude Include="..\..\inc\Sculpt\brush\SnakeHookBrushOp.h" />
+    <ClInclude Include="..\..\inc\Sculpt\brush\ThumbBrushOp.h" />
+    <ClInclude Include="..\..\inc\Sculpt\commonDefine.h" />
+    <ClInclude Include="..\..\inc\Sculpt\NormalUpdateOp.h" />
+    <ClInclude Include="..\..\inc\Sculpt\SculptCommand.h" />
+    <ClInclude Include="..\..\inc\Sculpt\VSculptConfig.h" />
+    <ClInclude Include="..\..\inc\Sculpt\StrokeData.h" />
+    <ClInclude Include="..\..\inc\Sculpt\SUtil.h" />
+    <ClInclude Include="..\..\inc\Sculpt\VSculptLogger.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\inc\Sculpt\VSculptLogger.cpp" />
+    <ClCompile Include="..\..\src\Sculpt\BezierCurve.cpp" />
+    <ClCompile Include="..\..\src\Sculpt\BMSplitCollapseOp.cpp" />
+    <ClCompile Include="..\..\src\Sculpt\brush\SculptStroke.cpp" />
+    <ClCompile Include="..\..\src\Sculpt\SculptCommand.cpp" />
+    <ClCompile Include="..\..\src\Sculpt\VSculptConfig.cpp" />
+    <ClCompile Include="..\..\src\Sculpt\SUtil.cpp" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{890B6467-3E65-4184-BD72-A1CEBADC67F5}</ProjectGuid>
+    <Keyword>Qt4VSv1.0</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>12.0.30501.0</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>..\..\lib\</OutDir>
+    <TargetName>$(ProjectName)d</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>..\..\lib\</OutDir>
+    <TargetName>$(ProjectName)</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>UNICODE;WIN32;WIN64;QT_DLL;QT_NO_DEBUG;NDEBUG;QT_CORE_LIB;QT_GUI_LIB;QT_WIDGETS_LIB;BOOST_DISABLE_THREADS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\GeneratedFiles;.;$(QTDIR_56)\include;.\GeneratedFiles\$(ConfigurationName);$(QTDIR_56)\include\QtCore;$(QTDIR_56)\include\QtGui;$(QTDIR_56)\include\QtWidgets;..\..\vendor\tbb\include;..\..\vendor\eigen;..\..\vendor\boost;..\..\inc;..\..\inc\render;..\..\inc\Sculpt;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Optimization>Disabled</Optimization>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>$(OutDir)\$(ProjectName).exe</OutputFile>
+      <AdditionalLibraryDirectories>$(QTDIR)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>qtmaind.lib;Qt5Cored.lib;Qt5Guid.lib;Qt5Widgetsd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>UNICODE;WIN32;WIN64;QT_DLL;QT_NO_DEBUG;NDEBUG;QT_CORE_LIB;QT_GUI_LIB;QT_WIDGETS_LIB;BOOST_DISABLE_THREADS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\GeneratedFiles;.;$(QTDIR_56)\include;.\GeneratedFiles\$(ConfigurationName);$(QTDIR_56)\include\QtCore;$(QTDIR_56)\include\QtGui;$(QTDIR_56)\include\QtWidgets;..\..\vendor\tbb\include;..\..\vendor\eigen;..\..\vendor\boost;..\..\inc;..\..\inc\render;..\..\inc\Sculpt;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DebugInformationFormat />
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>$(OutDir)\$(ProjectName).exe</OutputFile>
+      <AdditionalLibraryDirectories>$(QTDIR)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <AdditionalDependencies>qtmain.lib;Qt5Core.lib;Qt5Gui.lib;Qt5Widgets.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties MocDir=".\GeneratedFiles\$(ConfigurationName)" UicDir=".\GeneratedFiles" RccDir=".\GeneratedFiles" lupdateOptions="" lupdateOnBuild="0" lreleaseOptions="" Qt5Version_x0020_Win32="QTDIR_56" MocOptions="" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

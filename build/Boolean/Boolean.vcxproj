@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\inc\Boolean\accel\aabvh.h" />
+    <ClInclude Include="..\..\inc\Boolean\bm\bm_isct.h" />
+    <ClInclude Include="..\..\inc\Boolean\bm\bm_isct_boolean.h" />
+    <ClInclude Include="..\..\inc\Boolean\bm\bm_isct_bool_include.h" />
+    <ClInclude Include="..\..\inc\Boolean\bm\bm_isct_isct_problem.h" />
+    <ClInclude Include="..\..\inc\Boolean\bm\bm_isct_outer_hull_exact.h" />
+    <ClInclude Include="..\..\inc\Boolean\bm\bm_isct_tri_problem.h" />
+    <ClInclude Include="..\..\inc\Boolean\isct\absext4.h" />
+    <ClInclude Include="..\..\inc\Boolean\isct\empty3d.h" />
+    <ClInclude Include="..\..\inc\Boolean\isct\ext4.h" />
+    <ClInclude Include="..\..\inc\Boolean\isct\fixext4.h" />
+    <ClInclude Include="..\..\inc\Boolean\isct\fixint.h" />
+    <ClInclude Include="..\..\inc\Boolean\isct\gmpext4.h" />
+    <ClInclude Include="..\..\inc\Boolean\isct\quantization.h" />
+    <ClInclude Include="..\..\inc\Boolean\isct\triangle.h" />
+    <ClInclude Include="..\..\inc\Boolean\isct\unsafeRayTriIsct.h" />
+    <ClInclude Include="..\..\inc\Boolean\math\bbox.h" />
+    <ClInclude Include="..\..\inc\Boolean\math\ray.h" />
+    <ClInclude Include="..\..\inc\Boolean\math\vec.h" />
+    <ClInclude Include="..\..\inc\Boolean\util\iterPool.h" />
+    <ClInclude Include="..\..\inc\Boolean\util\memPool.h" />
+    <ClInclude Include="..\..\inc\Boolean\util\prelude.h" />
+    <ClInclude Include="..\..\inc\Boolean\util\shortVec.h" />
+    <ClInclude Include="..\..\inc\Boolean\util\unionFind.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\inc\Boolean\isct\empty3d.cpp" />
+    <ClCompile Include="..\..\inc\Boolean\isct\quantization.cpp" />
+    <ClCompile Include="..\..\inc\Boolean\isct\triangle.c" />
+    <ClCompile Include="..\..\inc\Boolean\util\log.cpp" />
+    <ClCompile Include="..\..\inc\Boolean\util\timer.cpp" />
+    <ClCompile Include="..\..\src\Boolean\bm\bm_isct.cpp" />
+    <ClCompile Include="..\..\src\Boolean\bm\bm_isct_boolean.cpp" />
+    <ClCompile Include="..\..\src\Boolean\bm\bm_isct_bool_include.cpp" />
+    <ClCompile Include="..\..\src\Boolean\bm\bm_isct_isct_problem.cpp" />
+    <ClCompile Include="..\..\src\Boolean\bm\bm_isct_outer_hull_exact.cpp" />
+    <ClCompile Include="..\..\src\Boolean\bm\bm_isct_tri_problem.cpp" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{EB94E78B-8A6F-4CBA-860E-053A3836C1E7}</ProjectGuid>
+    <RootNamespace>Boolean</RootNamespace>
+    <ProjectName>Boolean</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>..\..\lib\</OutDir>
+    <TargetName>$(ProjectName)d</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>..\..\lib\</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>..\..\inc\Boolean;..\..\inc\Boolean\accel;..\..\inc\Boolean\file_formats;..\..\inc\Boolean\isct;..\..\inc\Boolean\math;..\..\inc\Boolean\mesh;..\..\inc\Boolean\rawmesh;..\..\inc\Boolean\util;..\..\vendor\mpir\include;..\..\vendor\tbb\include;..\..\inc;..\..\vendor\eigen;..\..\vendor\boost;..\..\vendor;$(QTDIR_56)\include;$(QTDIR_56)\include\QtCore;$(QTDIR_56)\include\QtGui;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>BOOST_DISABLE_THREADS;NOMINMAX;_USE_MATH_DEFINES;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DisableSpecificWarnings>4146</DisableSpecificWarnings>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <AdditionalOptions>-D_SCL_SECURE_NO_WARNINGS %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>..\..\vendor\mpir-2.7.0\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>mpir_vc10_D.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>..\..\inc\Boolean;..\..\inc\Boolean\accel;..\..\inc\Boolean\file_formats;..\..\inc\Boolean\isct;..\..\inc\Boolean\math;..\..\inc\Boolean\mesh;..\..\inc\Boolean\rawmesh;..\..\inc\Boolean\util;..\..\vendor\mpir\include;..\..\vendor\tbb\include;..\..\inc;..\..\vendor\eigen;..\..\vendor\boost;..\..\vendor;$(QTDIR_56)\include;$(QTDIR_56)\include\QtCore;$(QTDIR_56)\include\QtGui;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>BOOST_DISABLE_THREADS;NOMINMAX;_USE_MATH_DEFINES;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DisableSpecificWarnings>4146;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <AdditionalOptions>-D_SCL_SECURE_NO_WARNINGS %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
