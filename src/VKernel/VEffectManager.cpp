@@ -1,0 +1,5 @@
+#include "VEffectManager.h"
+
+VK_BEGIN_NAMESPACE
+
+VK_END_NAMESPACE

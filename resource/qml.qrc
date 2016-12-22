@@ -1,0 +1,15 @@
+<RCC>
+    <qresource prefix="/">
+        <file>qml/main.qml</file>
+        <file>javascript/qmlcommonresource.js</file>
+        <file>javascript/qmlcommonutil.js</file>
+        <file>javascript/vendor/randomColor.js</file>
+        <file>qml/MainGBSingletonObject.qml</file>
+        <file>qml/SmoothDialog.qml</file>
+        <file>qml/main.js</file>
+        <file>qml/SculptDialog.qml</file>
+        <file>qml/DecimateDialog.qml</file>
+        <file>qml/RemeshDialog.qml</file>
+        <file>qml/BooleanDialog.qml</file>
+    </qresource>
+</RCC>

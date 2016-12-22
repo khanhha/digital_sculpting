@@ -1,0 +1,33 @@
+// David Eberly, Geometric Tools, Redmond WA 98052
+// Copyright (c) 1998-2016
+// Distributed under the Boost Software License, Version 1.0.
+// http://www.boost.org/LICENSE_1_0.txt
+// http://www.geometrictools.com/License/Boost/LICENSE_1_0.txt
+// File Version: 2.1.0 (2016/01/25)
+
+#include <GTEnginePCH.h>
+#include <Graphics/GL4/GteGL4ConstantBuffer.h>
+using namespace gte;
+
+GL4ConstantBuffer::GL4ConstantBuffer(ConstantBuffer const* cbuffer)
+    :
+    GL4Buffer(cbuffer, GL_UNIFORM_BUFFER)
+{
+    Initialize();
+}
+
+GEObject* GL4ConstantBuffer::Create(void*, GraphicsObject const* object)
+{
+    if (object->GetType() == GT_CONSTANT_BUFFER)
+    {
+        return new GL4ConstantBuffer(static_cast<ConstantBuffer const*>(object));
+    }
+
+    qCritical("Invalid object type.");
+    return nullptr;
+}
+
+void GL4ConstantBuffer::AttachToUnit(GLint uniformBufferUnit)
+{
+    GL::function().glBindBufferBase(GL_UNIFORM_BUFFER, uniformBufferUnit, mGLHandle);
+}
