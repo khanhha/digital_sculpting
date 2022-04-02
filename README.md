@@ -26,4 +26,4 @@ Calculate Union, Difference or Subtraction of two meshes
 - Qt5
 
 # Additional resource
-- More interactive [these clips](https://www.youtube.com/playlist?list=PLkLcpRjubtMfBnvqnge646SncXCaHWqBJ)
+- A few more [demo clips](https://www.youtube.com/playlist?list=PLkLcpRjubtMfBnvqnge646SncXCaHWqBJ)
