@@ -1,7 +1,7 @@
 # VSculpt
 An open-source digital sculpting project
 
-# Main features.
+# Some cool features.
 
 ## Multiple types of sculpt brushes
 Inflate, Nudget, Draw Pinch, Snake Hook, Clay Strip, Smooth, Crease, Clay, Grab, Flatten, Rotate, Thumb
@@ -14,6 +14,10 @@ Automatical subdivison of mesh surfaces to support higher level of detail
 ## Adaptive remeshing
 Optimize mesh topology for more vertices at high curvature regions and fewer vertices at more flat regions.
 ![image](https://user-images.githubusercontent.com/2276264/161384303-660d9f11-26c2-4948-bccb-3ed4599526df.png)
+
+## Mesh boolean tools
+Calculate Union, Difference or Subtraction of two meshes
+![image](https://user-images.githubusercontent.com/2276264/161384738-33079e96-5317-4bd1-b9d5-f311be2c6db2.png)
 
 # Requirements.
 - Qt5
