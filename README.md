@@ -1,5 +1,5 @@
 # VSculpt
-An open-source digital sculpting project where artistt can sculpt the mesh surface freely, and mesh's resolution will be automatically changed (reduced or increased) based on user's threshold. It also support a partial drawing technique on BVH accelerator, which helps reduce the OPenGL draw calls resulting in a big increase in the FPS.
+An open-source digital sculpting project
 
 # Main features.
 
